@@ -1,0 +1,49 @@
+#manage-text {
+  a {
+    color: $color-secondary;
+  }
+}
+
+select#manage {
+  padding-top: 0.25em !important;
+  padding-bottom: 0.25em !important;
+  height: auto !important;
+}
+
+// #manage-options-button,
+// #manage-shortcuts-button,
+// #find-editor-styles > button {
+//   &:before {
+//     color: $color-secondary;
+//     font-size: 1.4em;
+//     width: 1em;
+//     height: 1em;
+//   }
+
+//   text-overflow: clip;
+//   color: transparent;
+//   width: 2.5em;
+//   height: 2em;
+//   padding: 0;
+//   max-width: none;
+//   background-color: transparent;
+//   background: none;
+//   border: none;
+//   cursor: pointer;
+//   // white-space: nowrap;
+// }
+
+// #manage-options-button:before {
+//   @include fontawesome-icon($fa-var-cog);
+//   width: 2em;
+// }
+
+// #manage-shortcuts-button:before {
+//   @include fontawesome-icon($fa-var-keyboard);
+//   width: 2em;
+// }
+
+// #find-editor-styles > button:before {
+//   @include fontawesome-icon($fa-var-palette);
+//   width: 2em;
+// }

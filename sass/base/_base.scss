@@ -1,0 +1,63 @@
+// Styles for base elements
+
+html,
+body {
+  background-color: $color-secondary;
+  color: white;
+  letter-spacing: 0.025em;
+  font-family: $font-stack;
+}
+
+h1,
+h2,
+h3 {
+  letter-spacing: 0.025em;
+  color: $color-accent;
+}
+
+h2 {
+  font-variant: small-caps;
+}
+
+details {
+  margin-top: 1em;
+}
+
+button {
+  padding-top: 0.25em;
+  padding-bottom: 0.25em;
+  background-color: $color-secondary;
+  // min-width: 8em;
+}
+
+select {
+  color: white;
+  padding-right: 1.25em;
+  font-weight: 300;
+  letter-spacing: 0.025em;
+  width: auto !important;
+
+  option {
+    background-color: $color-secondary;
+    color: $color-primary;
+  }
+}
+
+input:not([type="checkbox"]) {
+  padding-top: 0.25em !important;
+  padding-bottom: 0.25em !important;
+  height: auto !important;
+}
+
+input[type="checkbox"]:not(.slider):hover {
+  background-color: $color-primary;
+
+  &:active,
+  &:hover {
+    background-color: $color-primary;
+  }
+}
+
+svg.svg-icon {
+  fill: white !important;
+}

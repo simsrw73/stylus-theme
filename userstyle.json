@@ -1,0 +1,12 @@
+{
+  "name": "StylUS",
+  "description": "A theme for Stylus",
+  "namespace": "https://github.com/author",
+  "homepageURL": "https://github.com/author/stylus-theme",
+  "supportURL": "https://github.com/author/stylus-theme/issues",
+  "updateBaseURL": "https://github.com/author/stylus-theme/raw/master/release/",
+  "license": "MIT",
+  "match": {
+    "url-prefix": "chrome-extension://clngdbkpkpeebahjckkjfobafhncgmne"
+  }
+}

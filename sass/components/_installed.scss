@@ -1,0 +1,47 @@
+#installed {
+  .entry {
+    h2 {
+      padding-top: 1em;
+      padding-bottom: 1em;
+    }
+  }
+
+  .entry.odd {
+    background-color: rgba($color-primary, 0.2);
+  }
+}
+
+.style-name-link {
+  color: $color-primary;
+}
+
+.disabled h2::after {
+  background-color: rgba($color-primary, 0.3);
+  color: #ccc;
+}
+
+.entry.usercss .style-name-link::after {
+  background-color: $color-primary;
+  color: white;
+}
+
+.disabled h2 .style-name-link,
+.disabled h2::after,
+.disabled .actions,
+.disabled .applies-to {
+  opacity: 1;
+}
+
+.target {
+  color: $color-primary;
+  font-weight: 400;
+}
+
+.actions .svg-icon {
+  fill: $color-primary !important;
+}
+
+.can-update[data-details$="locally edited"] .update svg,
+.update-problem .check-update svg {
+  fill: #cc0000 !important;
+}
