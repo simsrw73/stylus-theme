@@ -10,40 +10,48 @@ select#manage {
   height: auto !important;
 }
 
-// #manage-options-button,
-// #manage-shortcuts-button,
-// #find-editor-styles > button {
-//   &:before {
-//     color: $color-secondary;
-//     font-size: 1.4em;
-//     width: 1em;
-//     height: 1em;
-//   }
+#options-buttons {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  border-top: solid 1px $color-secondary;
+  height: 24px;
+  padding-top: 0.5em;
+}
 
-//   text-overflow: clip;
-//   color: transparent;
-//   width: 2.5em;
-//   height: 2em;
-//   padding: 0;
-//   max-width: none;
-//   background-color: transparent;
-//   background: none;
-//   border: none;
-//   cursor: pointer;
-//   // white-space: nowrap;
-// }
+#manage-options-button,
+#manage-shortcuts-button,
+#find-editor-styles > button {
+  &:before {
+    color: $color-secondary;
+    position: absolute;
+    width: 1em;
+    height: 1em;
+  }
 
-// #manage-options-button:before {
-//   @include fontawesome-icon($fa-var-cog);
-//   width: 2em;
-// }
+  text-overflow: clip;
+  color: transparent;
+  width: 0;
+  height: 0;
+  padding: 0;
+  margin: 0;
+  max-width: none;
+  background-color: transparent;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
 
-// #manage-shortcuts-button:before {
-//   @include fontawesome-icon($fa-var-keyboard);
-//   width: 2em;
-// }
+#manage-options-button:before {
+  @include fontawesome-icon($fa-var-cog, $size: 20px);
+  left: 16px;
+}
 
-// #find-editor-styles > button:before {
-//   @include fontawesome-icon($fa-var-palette);
-//   width: 2em;
-// }
+#manage-shortcuts-button:before {
+  @include fontawesome-icon($fa-var-keyboard, $size: 20px);
+  left: 50px;
+}
+
+#find-editor-styles > button:before {
+  @include fontawesome-icon($fa-var-palette, $size: 20px);
+  left: 88px;
+}

@@ -56,23 +56,18 @@ $font-stack: "Open Sans", sans-serif;
 
 // for using Fontawesome icons, install Fontawesome with npm
 @import "@fortawesome/fontawesome-free/scss/variables";
+@import "@fortawesome/fontawesome-free/scss/mixins";
+@import "@fortawesome/fontawesome-free/scss/core";
 $fa-font-path: "https://use.fontawesome.com/releases/v#{$fa-version}/webfonts";
 
-@import "@fortawesome/fontawesome-free/scss/regular";
+@import "@fortawesome/fontawesome-free/scss/solid";
 
 @mixin fontawesome-icon($icon, $size: 24px, $weight: 400) {
+  @extend %fa-icon;
+  @extend .fas;
   content: fa-content($icon);
-  display: inline-block;
-  font-family: "Font Awesome 5 Free";
   font-weight: $weight;
   font-size: $size;
-  font-style: normal;
-  font-variant: normal;
-  text-rendering: auto;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  line-height: 1;
-  vertical-align: -0.125em;
 }
 
 /*

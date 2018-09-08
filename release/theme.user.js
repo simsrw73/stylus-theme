@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name          StylUS
 // @description   A theme for Stylus
-// @version       0.1.0
+// @version       0.1.1
 // @author        Randy W. Sims <simsrw73@gmail.com>
 // @license       MIT
 // @namespace     https://github.com/author
@@ -28,9 +28,11 @@
   "   U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,",
   "   U+FEFF, U+FFFD; }",
   "  /* Fontawesome Icons */",
+  "  .fa, .fas, #manage-options-button:before, #manage-shortcuts-button:before, #find-editor-styles > button:before, .far, .fal, .fab { -moz-osx-font-smoothing: grayscale; -webkit-font-smoothing: antialiased; display: inline-block; font-style: normal; font-variant: normal; text-rendering: auto; line-height: 1; }",
+  "  #manage-options-button:before, #manage-shortcuts-button:before, #find-editor-styles > button:before { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; display: inline-block; font-style: normal; font-variant: normal; font-weight: normal; line-height: 1; vertical-align: -.125em; }",
   "  /*! Font Awesome Free 5.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) */",
-  "  @font-face { font-family: \'Font Awesome 5 Free\'; font-style: normal; font-weight: 400; src: url(\"https://use.fontawesome.com/releases/v5.3.1/webfonts/fa-regular-400.eot\"); src: url(\"https://use.fontawesome.com/releases/v5.3.1/webfonts/fa-regular-400.eot?#iefix\") format(\"embedded-opentype\"), url(\"https://use.fontawesome.com/releases/v5.3.1/webfonts/fa-regular-400.woff2\") format(\"woff2\"), url(\"https://use.fontawesome.com/releases/v5.3.1/webfonts/fa-regular-400.woff\") format(\"woff\"), url(\"https://use.fontawesome.com/releases/v5.3.1/webfonts/fa-regular-400.ttf\") format(\"truetype\"), url(\"https://use.fontawesome.com/releases/v5.3.1/webfonts/fa-regular-400.svg#fontawesome\") format(\"svg\"); }",
-  "  .far { font-family: \'Font Awesome 5 Free\'; font-weight: 400; }",
+  "  @font-face { font-family: \'Font Awesome 5 Free\'; font-style: normal; font-weight: 900; src: url(\"https://use.fontawesome.com/releases/v5.3.1/webfonts/fa-solid-900.eot\"); src: url(\"https://use.fontawesome.com/releases/v5.3.1/webfonts/fa-solid-900.eot?#iefix\") format(\"embedded-opentype\"), url(\"https://use.fontawesome.com/releases/v5.3.1/webfonts/fa-solid-900.woff2\") format(\"woff2\"), url(\"https://use.fontawesome.com/releases/v5.3.1/webfonts/fa-solid-900.woff\") format(\"woff\"), url(\"https://use.fontawesome.com/releases/v5.3.1/webfonts/fa-solid-900.ttf\") format(\"truetype\"), url(\"https://use.fontawesome.com/releases/v5.3.1/webfonts/fa-solid-900.svg#fontawesome\") format(\"svg\"); }",
+  "  .fa, .fas, #manage-options-button:before, #manage-shortcuts-button:before, #find-editor-styles > button:before { font-family: \'Font Awesome 5 Free\'; font-weight: 900; }",
   "  /* Material Icons */",
   "  @font-face { font-family: \"Material Icons\"; font-style: normal; font-weight: 400; src: url(https://fonts.gstatic.com/s/materialicons/v38/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2) format(\"woff2\"); }",
   "  html, body { background-color: #91d0c6; color: white; letter-spacing: 0.025em; font-family: \"Open Sans\", sans-serif; }",
@@ -60,6 +62,12 @@
   "  #header h1:after { content: \"}\"; font-size: 1.2em; }",
   "  #manage-text a { color: #91d0c6; }",
   "  select#manage { padding-top: 0.25em !important; padding-bottom: 0.25em !important; height: auto !important; }",
+  "  #options-buttons { margin-top: 1em; margin-bottom: 1em; border-top: solid 1px #91d0c6; height: 24px; padding-top: 0.5em; }",
+  "  #manage-options-button, #manage-shortcuts-button, #find-editor-styles > button { text-overflow: clip; color: transparent; width: 0; height: 0; padding: 0; margin: 0; max-width: none; background-color: transparent; background: none; border: none; cursor: pointer; }",
+  "  #manage-options-button:before, #manage-shortcuts-button:before, #find-editor-styles > button:before { color: #91d0c6; position: absolute; width: 1em; height: 1em; }",
+  "  #manage-options-button:before { content: \"\\f013\"; font-weight: 400; font-size: 20px; left: 16px; }",
+  "  #manage-shortcuts-button:before { content: \"\\f11c\"; font-weight: 400; font-size: 20px; left: 50px; }",
+  "  #find-editor-styles > button:before { content: \"\\f53f\"; font-weight: 400; font-size: 20px; left: 88px; }",
   "  #stylus-popup { background-color: #00352d; }",
   ""
 ].join("\n");

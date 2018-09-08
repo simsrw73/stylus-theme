@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name          StylUS
 // @description   A theme for Stylus
-// @version       0.1.0
+// @version       0.1.1
 // @author        Randy W. Sims <simsrw73@gmail.com>
 // @license       MIT
 // @namespace     https://github.com/author
