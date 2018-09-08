@@ -6,9 +6,6 @@
   "updateBaseURL": "https://github.com/author/stylus-theme/raw/master/release/",
   "license": "MIT",
   "match": {
-    "url-prefix": [
-      "chrome-extension://clngdbkpkpeebahjckkjfobafhncgmne",
-      "moz-extension://"
-    ]
+    "regexp": ["chrome-extension://.*", "moz-extension://.*"]
   }
 }

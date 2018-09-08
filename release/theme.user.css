@@ -10,8 +10,8 @@
 @updateURL     https://github.com/author/stylus-theme/raw/master/release/theme.user.css
 ==/UserStyle== */
 @-moz-document
-  url-prefix('chrome-extension://clngdbkpkpeebahjckkjfobafhncgmne'),
-  url-prefix('moz-extension://')
+  regexp('chrome-extension://.*'),
+  regexp('moz-extension://.*')
 {
   /* latin */
   @font-face { font-family: "Open Sans"; font-style: normal; font-weight: 400; src: local("Open Sans Regular"), local("OpenSans-Regular"), url(https://fonts.gstatic.com/s/opensans/v15/mem8YaGs126MiZpBA-UFVZ0b.woff2) format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
@@ -62,9 +62,9 @@
   #header h1:after { content: "}"; font-size: 1.2em; }
   #manage-text a { color: #91d0c6; }
   select#manage { padding-top: 0.25em !important; padding-bottom: 0.25em !important; height: auto !important; }
-  .active #filters-stats { background-color: #26fefa; color: black; border: none; font-size: 0.6rem; font-weight: 300; padding: 2px 8px; -webkit-border-top-left-radius: 4px; border-top-left-radius: 4px; -webkit-border-bottom-left-radius: 4px; border-bottom-left-radius: 4px; margin-bottom: -4px; padding-right: 0; cursor: default; }
+  .active #filters-stats { background-color: #26fefa; color: black; border: none; font-size: 10px; font-weight: 400; padding: 2px 8px; -webkit-border-top-left-radius: 4px; border-top-left-radius: 4px; -webkit-border-bottom-left-radius: 4px; border-bottom-left-radius: 4px; margin-bottom: -4px; padding-right: 0; cursor: default; }
   a#reset-filters { background-color: #26fefa; fill: #00352d; -webkit-border-top-right-radius: 4px; border-top-right-radius: 4px; -webkit-border-bottom-right-radius: 4px; border-bottom-right-radius: 4px; margin: 5px 0 2px 0; padding: 0; }
-  #reset-filters svg { width: 18px; height: 17px; padding: 2px; fill: black !important; }
+  #reset-filters svg { width: auto; height: 18px; padding: 2px; fill: black !important; }
   #options-buttons { position: relative; margin-top: 1em; margin-bottom: 1em; border-top: solid 1px #91d0c6; height: 24px; padding-top: 0.5em; }
   #manage-options-button, #manage-shortcuts-button, #find-editor-styles > button { text-overflow: clip; color: transparent; width: 0; height: 0; padding: 0; margin: 0; max-width: none; background-color: transparent; background: none; border: none; cursor: pointer; }
   #manage-options-button:before, #manage-shortcuts-button:before, #find-editor-styles > button:before { color: #91d0c6; position: absolute; width: 1em; height: 1em; }
