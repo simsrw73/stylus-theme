@@ -3,8 +3,8 @@
 
 # Boilerplate for creating User Styles
 
-[![Install with Stylus](https://img.shields.io/badge/Install%20with-Stylus-00adad.svg)](https://github.com/simsrw73/boilerplate-userstyle-theme/raw/master/release/theme.user.css)
-[![Install with Tampermonkey](https://img.shields.io/badge/Install%20with-Tampermonkey-00485b.svg)](https://github.com/simsrw73/boilerplate-userstyle-theme/raw/master/release/theme.user.js)
+[![Install with Stylus](https://img.shields.io/badge/Install%20with-Stylus-00adad.svg)](https://github.com/simsrw73/stylus-theme/raw/master/release/theme.user.css)
+[![Install with Tampermonkey](https://img.shields.io/badge/Install%20with-Tampermonkey-00485b.svg)](https://github.com/simsrw73/stylus-theme/raw/master/release/theme.user.js)
 
 Boilerplate for creating user styles for website themes
 
@@ -50,10 +50,10 @@ Once you've installed one of the extensions above, you are ready to install the 
 Or directly from here:
 
   * For Stylus users:<br>
-[![Install with Stylus](https://img.shields.io/badge/Install%20with-Stylus-00adad.svg)](https://github.com/simsrw73/boilerplate-userstyle-theme/raw/master/release/theme.user.css)
+[![Install with Stylus](https://img.shields.io/badge/Install%20with-Stylus-00adad.svg)](https://github.com/simsrw73/stylus-theme/raw/master/release/theme.user.css)
 
   * For Tampermonkey users:<br>
-[![Install with Tampermonkey](https://img.shields.io/badge/Install%20with-Tampermonkey-00485b.svg)](https://github.com/simsrw73/boilerplate-userstyle-theme/raw/master/release/theme.user.js)
+[![Install with Tampermonkey](https://img.shields.io/badge/Install%20with-Tampermonkey-00485b.svg)](https://github.com/simsrw73/stylus-theme/raw/master/release/theme.user.js)
 
 ## Modifying the Theme
 
@@ -65,7 +65,7 @@ Or directly from here:
 ### Clone the Repository
 
 ```shell
-git clone https://github.com/simsrw73/boilerplate-userstyle-theme.git my-theme
+git clone https://github.com/simsrw73/stylus-theme.git my-theme
 ```
 
 ### Install Build Dependencies
