@@ -1,7 +1,7 @@
 {
   "name": "stylus-theme",
-  "version": "0.1.0",
-  "description": "Theme for Stylus",
+  "version": "0.1.2",
+  "description": "A theme based on the Stylus logo.",
   "author": "Randy W. Sims <simsrw73@gmail.com>",
   "license": "MIT",
   "homepage": "https://github.com/simsrw73/stylus-theme#readme",
