@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name          StylUS
-// @description   A theme for Stylus
-// @version       0.1.1
+// @description   A theme based on the Stylus logo.
+// @version       0.1.2
 // @author        Randy W. Sims <simsrw73@gmail.com>
 // @license       MIT
 // @namespace     https://github.com/author
@@ -11,6 +11,7 @@
 // @downloadURL   https://github.com/author/stylus-theme/raw/master/release/theme.user.js
 // @run-at        document-start
 // @include       chrome-extension://clngdbkpkpeebahjckkjfobafhncgmne/*
+// @include       moz-extension://*
 // ==/UserScript==
 (function() {var css = [
   "  /* latin */",
@@ -62,12 +63,15 @@
   "  #header h1:after { content: \"}\"; font-size: 1.2em; }",
   "  #manage-text a { color: #91d0c6; }",
   "  select#manage { padding-top: 0.25em !important; padding-bottom: 0.25em !important; height: auto !important; }",
-  "  #options-buttons { margin-top: 1em; margin-bottom: 1em; border-top: solid 1px #91d0c6; height: 24px; padding-top: 0.5em; }",
+  "  .active #filters-stats { background-color: #26fefa; color: black; border: none; font-size: 0.6rem; font-weight: 300; padding: 2px 8px; -webkit-border-top-left-radius: 4px; border-top-left-radius: 4px; -webkit-border-bottom-left-radius: 4px; border-bottom-left-radius: 4px; margin-bottom: -4px; padding-right: 0; cursor: default; }",
+  "  a#reset-filters { background-color: #26fefa; fill: #00352d; -webkit-border-top-right-radius: 4px; border-top-right-radius: 4px; -webkit-border-bottom-right-radius: 4px; border-bottom-right-radius: 4px; margin: 5px 0 2px 0; padding: 0; }",
+  "  #reset-filters svg { width: 18px; height: 17px; padding: 2px; fill: black !important; }",
+  "  #options-buttons { position: relative; margin-top: 1em; margin-bottom: 1em; border-top: solid 1px #91d0c6; height: 24px; padding-top: 0.5em; }",
   "  #manage-options-button, #manage-shortcuts-button, #find-editor-styles > button { text-overflow: clip; color: transparent; width: 0; height: 0; padding: 0; margin: 0; max-width: none; background-color: transparent; background: none; border: none; cursor: pointer; }",
   "  #manage-options-button:before, #manage-shortcuts-button:before, #find-editor-styles > button:before { color: #91d0c6; position: absolute; width: 1em; height: 1em; }",
-  "  #manage-options-button:before { content: \"\\f013\"; font-weight: 400; font-size: 20px; left: 16px; }",
-  "  #manage-shortcuts-button:before { content: \"\\f11c\"; font-weight: 400; font-size: 20px; left: 50px; }",
-  "  #find-editor-styles > button:before { content: \"\\f53f\"; font-weight: 400; font-size: 20px; left: 88px; }",
+  "  #manage-options-button:before { content: \"\\f013\"; font-weight: 400; font-size: 20px; left: 0; }",
+  "  #manage-shortcuts-button:before { content: \"\\f11c\"; font-weight: 400; font-size: 20px; left: 34px; }",
+  "  #find-editor-styles > button:before { content: \"\\f53f\"; font-weight: 400; font-size: 20px; left: 72px; }",
   "  #stylus-popup { background-color: #00352d; }",
   ""
 ].join("\n");
