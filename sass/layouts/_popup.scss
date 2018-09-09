@@ -1,3 +1,30 @@
 #stylus-popup {
   background-color: $color-primary;
+
+  .svg-icon {
+    fill: $color-secondary !important;
+  }
+
+  #installed {
+    .entry {
+      &:nth-child(even) {
+        background-color: rgba($color-secondary, 0.05);
+      }
+
+      label {
+        color: $color-secondary;
+      }
+    }
+  }
+
+  .actions {
+    a {
+      color: $color-secondary;
+    }
+  }
+
+  #popup-options {
+    button {
+    }
+  }
 }
