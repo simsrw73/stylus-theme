@@ -27,6 +27,7 @@ button {
   padding-top: 0.25em;
   padding-bottom: 0.25em;
   background-color: $color-secondary;
+  color: $color-primary;
   // min-width: 8em;
 }
 
@@ -36,6 +37,11 @@ select {
   font-weight: 300;
   letter-spacing: 0.025em;
   width: auto !important;
+
+  optgroup {
+    background-color: $color-primary;
+    color: $color-secondary;
+  }
 
   option {
     background-color: $color-secondary;
