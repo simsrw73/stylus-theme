@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name          Stylus Theme
 @description   A theme based on the Stylus logo.
-@version       0.1.3
+@version       0.1.4
 @author        Randy W. Sims <simsrw73@gmail.com>
 @license       MIT
 @namespace     https://github.com/author
@@ -56,6 +56,11 @@
   .target { color: #00352d; font-weight: 400; }
   .actions .svg-icon { fill: #00352d !important; }
   .can-update[data-details$="locally edited"] .update svg, .update-problem .check-update svg { fill: #cc0000 !important; }
+  .settings-column:first-child { display: -webkit-box; display: -webkit-flex; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; flex-direction: column; }
+  .settings-column:first-child #style-actions { margin-top: 1em; }
+  .settings-column:first-child #sort-wrapper { -webkit-box-ordinal-group: 2; -webkit-order: 1; order: 1; margin-top: 0.75em; }
+  .settings-column:first-child #sort-wrapper:before { content: "Sort:"; display: block; width: 100%; color: #26fefa; font-size: 18px; font-weight: 700; font-variant: small-caps; margin-bottom: 0.5em; }
+  .settings-column:first-child #filters { border: 1px solid transparent; -webkit-box-ordinal-group: 3; -webkit-order: 2; order: 2; }
   .CodeMirror { font-family: "Source Sans Pro", monospace; }
   #header { background-color: #00352d; border-right: 1px solid transparent; overflow-x: hidden; overflow-y: auto; -webkit-box-shadow: 2px 0 16px rgba(0, 0, 0, 0.6); box-shadow: 2px 0 16px rgba(0, 0, 0, 0.6); }
   #header h1 { letter-spacing: 0.05em; }
@@ -75,7 +80,7 @@
   #find-editor-styles > button:before { content: "\f53f"; font-weight: 400; font-size: 20px; left: 72px; }
   #stylus-popup { background-color: #00352d; }
   #stylus-popup .svg-icon { fill: #91d0c6 !important; }
-  #stylus-popup #installed .entry:nth-child(even) { background-color: rgba(145, 208, 198, 0.05); }
-  #stylus-popup #installed .entry label { color: #91d0c6; }
+  #stylus-popup #installed .entry:nth-child(odd) { background-color: rgba(145, 208, 198, 0.05); }
+  #stylus-popup #installed .entry label { color: #26fefa; }
   #stylus-popup .actions a { color: #91d0c6; }
 }
