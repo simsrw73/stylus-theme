@@ -1,13 +1,13 @@
 /* ==UserStyle==
 @name          Stylus Theme
 @description   A theme based on the Stylus logo.
-@version       0.1.4
+@version       0.1.5
 @author        Randy W. Sims <simsrw73@gmail.com>
 @license       MIT
-@namespace     https://github.com/author
-@homepageURL   https://github.com/author/stylus-theme
-@supportURL    https://github.com/author/stylus-theme/issues
-@updateURL     https://github.com/author/stylus-theme/raw/master/release/theme.user.css
+@namespace     https://github.com/simsrw73
+@homepageURL   https://github.com/simsrw73/stylus-theme
+@supportURL    https://github.com/simsrw73/stylus-theme/issues
+@updateURL     https://github.com/simsrw73/stylus-theme/raw/master/release/theme.user.css
 ==/UserStyle== */
 @-moz-document
   regexp('chrome-extension://.*'),
@@ -39,14 +39,18 @@
   h1, h2, h3 { letter-spacing: 0.025em; color: #26fefa; }
   h2 { font-variant: small-caps; }
   details { margin-top: 1em; }
-  button { padding-top: 0.25em; padding-bottom: 0.25em; background-color: #91d0c6; color: #00352d; }
-  select { color: white; padding-right: 1.25em; font-weight: 300; letter-spacing: 0.025em; width: auto !important; }
-  select optgroup { background-color: #00352d; color: #91d0c6; }
+  button { padding-top: 0.25em; padding-bottom: 0.25em; -webkit-border-radius: 0.25em; border-radius: 0.25em; border: 1px solid #91d0c6; background-color: #00352d; color: #91d0c6; background-image: none; cursor: pointer; }
+  button:hover { background-color: #91d0c6 !important; color: #00352d !important; }
+  select { color: #91d0c6; border: 1px solid #91d0c6; background-color: #00352d; -webkit-border-radius: 0.25em; border-radius: 0.25em; padding-right: 1.25em; font-weight: 300; letter-spacing: 0.025em; width: auto !important; }
+  select optgroup { background-color: rgba(145, 208, 198, 0.7); color: #00352d; }
   select option { background-color: #91d0c6; color: #00352d; }
+  button:disabled, select:disabled, option:disabled, select[disabled] > option { color: rgba(255, 255, 255, 0.4); border-color: rgba(255, 255, 255, 0.4); background-color: rgba(255, 255, 255, 0.15); }
+  button:disabled:hover, select:disabled:hover, option:disabled:hover, select[disabled] > option:hover { color: rgba(255, 255, 255, 0.4) !important; border-color: rgba(255, 255, 255, 0.4) !important; background-color: rgba(255, 255, 255, 0.15) !important; cursor: default; }
   input:not([type="checkbox"]) { padding-top: 0.25em !important; padding-bottom: 0.25em !important; height: auto !important; }
   input[type="checkbox"]:not(.slider):hover { background-color: #00352d; }
   input[type="checkbox"]:not(.slider):hover:active, input[type="checkbox"]:not(.slider):hover:hover { background-color: #00352d; }
-  svg.svg-icon { fill: white !important; }
+  svg.svg-icon { fill: #91d0c6 !important; }
+  input { -webkit-border-radius: 0.25em; border-radius: 0.25em; }
   #installed .entry h2 { padding-top: 1em; padding-bottom: 1em; }
   #installed .entry.odd { background-color: rgba(0, 53, 45, 0.2); }
   .style-name-link { color: #00352d; }
@@ -56,17 +60,17 @@
   .target { color: #00352d; font-weight: 400; }
   .actions .svg-icon { fill: #00352d !important; }
   .can-update[data-details$="locally edited"] .update svg, .update-problem .check-update svg { fill: #cc0000 !important; }
-  .settings-column:first-child { display: -webkit-box; display: -webkit-flex; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; flex-direction: column; }
-  .settings-column:first-child #style-actions { margin-top: 1em; }
-  .settings-column:first-child #sort-wrapper { -webkit-box-ordinal-group: 2; -webkit-order: 1; order: 1; margin-top: 0.75em; }
-  .settings-column:first-child #sort-wrapper:before { content: "Sort:"; display: block; width: 100%; color: #26fefa; font-size: 18px; font-weight: 700; font-variant: small-caps; margin-bottom: 0.5em; }
-  .settings-column:first-child #filters { border: 1px solid transparent; -webkit-box-ordinal-group: 3; -webkit-order: 2; order: 2; }
   .CodeMirror { font-family: "Source Sans Pro", monospace; }
   #header { background-color: #00352d; border-right: 1px solid transparent; overflow-x: hidden; overflow-y: auto; -webkit-box-shadow: 2px 0 16px rgba(0, 0, 0, 0.6); box-shadow: 2px 0 16px rgba(0, 0, 0, 0.6); }
   #header h1 { letter-spacing: 0.05em; }
   #header h1:before { content: "{"; font-size: 1.2em; }
   #header h1:after { content: "}"; font-size: 1.2em; }
   #header details summary { padding-bottom: 0.5em; }
+  .settings-column:first-child { display: -webkit-box; display: -webkit-flex; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; flex-direction: column; }
+  .settings-column:first-child #style-actions { margin-top: 1em; }
+  .settings-column:first-child #sort-wrapper { -webkit-box-ordinal-group: 2; -webkit-order: 1; order: 1; margin-top: 0.75em; }
+  .settings-column:first-child #sort-wrapper:before { content: "Sort:"; display: block; width: 100%; color: #26fefa; font-size: 18px; font-weight: 700; font-variant: small-caps; margin-bottom: 0.5em; }
+  .settings-column:first-child #filters { border: 1px solid transparent; -webkit-box-ordinal-group: 3; -webkit-order: 2; order: 2; }
   #manage-text a { color: #91d0c6; }
   select#manage { padding-top: 0.25em !important; padding-bottom: 0.25em !important; height: auto !important; }
   .active #filters-stats { background-color: #26fefa; color: black; border: none; font-size: 10px; font-weight: 400; padding: 2px 8px; -webkit-border-top-left-radius: 4px; border-top-left-radius: 4px; -webkit-border-bottom-left-radius: 4px; border-bottom-left-radius: 4px; margin-bottom: -4px; padding-right: 0; cursor: default; }
@@ -79,7 +83,6 @@
   #manage-shortcuts-button:before { content: "\f11c"; font-weight: 400; font-size: 20px; left: 34px; }
   #find-editor-styles > button:before { content: "\f53f"; font-weight: 400; font-size: 20px; left: 72px; }
   #stylus-popup { background-color: #00352d; }
-  #stylus-popup .svg-icon { fill: #91d0c6 !important; }
   #stylus-popup #installed .entry:nth-child(odd) { background-color: rgba(145, 208, 198, 0.05); }
   #stylus-popup #installed .entry label { color: #26fefa; }
   #stylus-popup .actions a { color: #91d0c6; }
