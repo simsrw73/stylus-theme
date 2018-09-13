@@ -26,26 +26,53 @@ details {
 button {
   padding-top: 0.25em;
   padding-bottom: 0.25em;
-  background-color: $color-secondary;
-  color: $color-primary;
-  // min-width: 8em;
+  border-radius: 0.25em;
+  border: 1px solid $color-secondary;
+  background-color: $color-primary;
+  color: $color-secondary;
+  background-image: none;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $color-secondary !important;
+    color: $color-primary !important;
+  }
 }
 
 select {
-  color: white;
+  color: $color-secondary;
+  border: 1px solid $color-secondary;
+  background-color: $color-primary;
+  border-radius: 0.25em;
   padding-right: 1.25em;
   font-weight: 300;
   letter-spacing: 0.025em;
   width: auto !important;
 
   optgroup {
-    background-color: $color-primary;
-    color: $color-secondary;
+    background-color: rgba(145, 208, 198, 0.7);
+    color: #00352d;
   }
 
   option {
     background-color: $color-secondary;
     color: $color-primary;
+  }
+}
+
+button:disabled,
+select:disabled,
+option:disabled,
+select[disabled] > option {
+  color: rgba(255, 255, 255, 0.4);
+  border-color: rgba(255, 255, 255, 0.4);
+  background-color: rgba(255, 255, 255, 0.15);
+
+  &:hover {
+    color: rgba(255, 255, 255, 0.4) !important;
+    border-color: rgba(255, 255, 255, 0.4) !important;
+    background-color: rgba(255, 255, 255, 0.15) !important;
+    cursor: default;
   }
 }
 
@@ -65,5 +92,9 @@ input[type="checkbox"]:not(.slider):hover {
 }
 
 svg.svg-icon {
-  fill: white !important;
+  fill: $color-secondary !important;
+}
+
+input {
+  border-radius: 0.25em;
 }

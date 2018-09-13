@@ -2,6 +2,36 @@
   padding-bottom: 0.5em;
 }
 
+.settings-column:first-child {
+  display: flex;
+  flex-direction: column;
+
+  #style-actions {
+    margin-top: 1em;
+  }
+
+  #sort-wrapper {
+    order: 1;
+    margin-top: 0.75em;
+
+    &:before {
+      content: "Sort:";
+      display: block;
+      width: 100%;
+      color: #26fefa;
+      font-size: 18px;
+      font-weight: 700;
+      font-variant: small-caps;
+      margin-bottom: 0.5em;
+    }
+  }
+
+  #filters {
+    border: 1px solid transparent;
+    order: 2;
+  }
+}
+
 #manage-text {
   a {
     color: $color-secondary;
@@ -89,4 +119,9 @@ a#reset-filters {
 #find-editor-styles > button:before {
   @include fontawesome-icon($fa-var-palette, $size: 20px);
   left: 72px;
+}
+
+#style-actions {
+  #check-all-updates {
+  }
 }

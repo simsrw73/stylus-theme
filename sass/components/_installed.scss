@@ -45,33 +45,3 @@
 .update-problem .check-update svg {
   fill: #cc0000 !important;
 }
-
-.settings-column:first-child {
-  display: flex;
-  flex-direction: column;
-
-  #style-actions {
-    margin-top: 1em;
-  }
-
-  #sort-wrapper {
-    order: 1;
-    margin-top: 0.75em;
-
-    &:before {
-      content: "Sort:";
-      display: block;
-      width: 100%;
-      color: #26fefa;
-      font-size: 18px;
-      font-weight: 700;
-      font-variant: small-caps;
-      margin-bottom: 0.5em;
-    }
-  }
-
-  #filters {
-    border: 1px solid transparent;
-    order: 2;
-  }
-}
