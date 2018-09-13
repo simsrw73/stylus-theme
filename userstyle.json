@@ -1,9 +1,9 @@
 {
   "name": "Stylus Theme",
-  "namespace": "https://github.com/author",
-  "homepageURL": "https://github.com/author/stylus-theme",
-  "supportURL": "https://github.com/author/stylus-theme/issues",
-  "updateBaseURL": "https://github.com/author/stylus-theme/raw/master/release/",
+  "namespace": "https://github.com/simsrw73",
+  "homepageURL": "https://github.com/simsrw73/stylus-theme",
+  "supportURL": "https://github.com/simsrw73/stylus-theme/issues",
+  "updateBaseURL": "https://github.com/simsrw73/stylus-theme/raw/master/release/",
   "license": "MIT",
   "match": {
     "regexp": ["chrome-extension://.*", "moz-extension://.*"]
