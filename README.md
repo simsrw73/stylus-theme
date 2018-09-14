@@ -31,4 +31,4 @@ Or directly from here:
 
 ## Gallery
 
-![Gallery](screenshots/gallery.jpg)
+![Popup](screenshots/popup.jpg)
