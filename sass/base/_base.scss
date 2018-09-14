@@ -26,10 +26,11 @@ details {
 button {
   padding-top: 0.25em;
   padding-bottom: 0.25em;
+  margin: 0.25em;
   border-radius: 0.25em;
-  border: 1px solid $color-secondary;
+  border: 1px solid white;
   background-color: $color-primary;
-  color: $color-secondary;
+  color: white;
   background-image: none;
   cursor: pointer;
 
@@ -40,9 +41,9 @@ button {
 }
 
 select {
-  color: $color-secondary;
-  border: 1px solid $color-secondary;
-  background-color: $color-primary;
+  color: white;
+  border: 1px solid white;
+  background-color: transparent;
   border-radius: 0.25em;
   padding-right: 1.25em;
   font-weight: 300;
@@ -92,7 +93,7 @@ input[type="checkbox"]:not(.slider):hover {
 }
 
 svg.svg-icon {
-  fill: $color-secondary !important;
+  fill: white !important;
 }
 
 input {

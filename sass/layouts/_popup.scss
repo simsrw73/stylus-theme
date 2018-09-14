@@ -2,18 +2,30 @@
   background-color: $color-primary;
 
   #installed {
-    .entry {
-      &:nth-child(odd) {
-        background-color: rgba($color-secondary, 0.05);
-      }
+    background-color: #fafafa;
+    padding: 0;
+    box-shadow: none;
 
-      label {
-        color: $color-accent;
+    .entry {
+      background-color: white;
+      color: $color-primary;
+
+      &:nth-child(even) {
+        background: none !important;
+        background-image: linear-gradient(
+          to right,
+          rgba(145, 208, 198, 0.3),
+          rgba(145, 208, 198, 0.2) 80%,
+          transparent 100%
+        ) !important;
       }
     }
   }
 
   .actions {
+    margin: 0 !important;
+    padding: 0 var(--outer-padding);
+
     a {
       color: $color-secondary;
     }

@@ -1,13 +1,26 @@
 #installed {
+  box-shadow: 2px 0 8px rgba(0, 0, 0, 0.6);
+  padding-top: 2em;
+  padding-bottom: 2em;
+  background-color: white;
+
   .entry {
+    background-color: white !important;
+
     h2 {
       padding-top: 1em;
       padding-bottom: 1em;
     }
   }
 
-  .entry.odd {
-    background-color: rgba($color-primary, 0.2);
+  .entry.even {
+    background: none !important;
+    background-image: linear-gradient(
+      to right,
+      rgba(145, 208, 198, 0.3),
+      rgba(145, 208, 198, 0.2) 80%,
+      transparent 100%
+    ) !important;
   }
 }
 
@@ -16,8 +29,8 @@
 }
 
 .disabled h2::after {
-  background-color: rgba($color-primary, 0.3);
-  color: #ccc;
+  background-color: rgba($color-primary, 0.5);
+  color: white;
 }
 
 .entry.usercss .style-name-link::after {
