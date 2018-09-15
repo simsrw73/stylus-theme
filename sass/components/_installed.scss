@@ -2,10 +2,10 @@
   box-shadow: 2px 0 8px rgba(0, 0, 0, 0.6);
   padding-top: 2em;
   padding-bottom: 2em;
-  background-color: white;
+  background-color: $installed-background;
 
   .entry {
-    background-color: white !important;
+    background-color: $installed-background !important;
 
     h2 {
       padding-top: 1em;
@@ -15,46 +15,42 @@
 
   .entry.even {
     background: none !important;
-    background-image: linear-gradient(
-      to right,
-      rgba(145, 208, 198, 0.3),
-      rgba(145, 208, 198, 0.2) 80%,
-      transparent 100%
-    ) !important;
+    background-image: $installed-item-alt-gradient !important;
   }
-}
 
-.style-name-link {
-  color: $color-primary;
-}
+  .style-name-link {
+    color: $installed-text-color;
+  }
 
-.disabled h2::after {
-  background-color: rgba($color-primary, 0.5);
-  color: white;
-}
+  .disabled h2::after {
+    background-color: $installed-badge-disabled-background-color;
+    color: $installed-badge-disabled-color;
+  }
 
-.entry.usercss .style-name-link::after {
-  background-color: $color-primary;
-  color: white;
-}
+  .entry.usercss .style-name-link::after {
+    background-color: $installed-badge-usercss-background-color;
+    color: $installed-badge-usercss-color;
+    font-weight: 700;
+  }
 
-.disabled h2 .style-name-link,
-.disabled h2::after,
-.disabled .actions,
-.disabled .applies-to {
-  opacity: 1;
-}
+  .disabled h2 .style-name-link,
+  .disabled h2::after,
+  .disabled .actions,
+  .disabled .applies-to {
+    opacity: 1;
+  }
 
-.target {
-  color: $color-primary;
-  font-weight: 400;
-}
+  .target {
+    color: $installed-text-color;
+    font-weight: 400;
+  }
 
-.actions .svg-icon {
-  fill: $color-primary !important;
-}
+  .actions .svg-icon {
+    fill: $installed-text-color !important;
+  }
 
-.can-update[data-details$="locally edited"] .update svg,
-.update-problem .check-update svg {
-  fill: #cc0000 !important;
+  .can-update[data-details$="locally edited"] .update svg,
+  .update-problem .check-update svg {
+    fill: #cc0000 !important;
+  }
 }
