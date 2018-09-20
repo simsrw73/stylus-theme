@@ -13,6 +13,7 @@ h2,
 h3 {
   letter-spacing: 0.025em;
   color: $color-accent;
+  text-shadow: 1px 0 2px rgba(0, 0, 0, 0.3);
 }
 
 h2 {
@@ -29,7 +30,7 @@ button {
   margin: 0.25em;
   border-radius: 0.25em;
   border: 1px solid white;
-  background-color: $color-primary;
+  background-color: transparent;
   color: white;
   background-image: none;
   cursor: pointer;

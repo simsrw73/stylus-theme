@@ -1,8 +1,11 @@
 // Select Theme [ "Light" / "Dark" ]
 
-$theme: "Light";
+$theme: "Dark";
 
 // Light
+
+$header-background-color: $color-primary;
+$popup-background: $color-primary;
 
 /* https://www.heropatterns.com/ */
 $workspace-color: #fafafa !default;
@@ -28,11 +31,14 @@ $installed-badge-usercss-background-color: rgba($color-primary, 0.8) !default;
 
 // Dark Theme
 @if ($theme == "Dark") {
+  $header-background-color: #2d7070;
+  $popup-background: #333;
+
   /* https://www.heropatterns.com/ */
   $workspace-color: #333;
   $workspace-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='#{encodecolor($color-accent)}' fill-opacity='0.1' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
 
-  $installed-text-color: $color-secondary;
+  $installed-text-color: $color-accent;
   $installed-text-inverted-color: $color-secondary !default;
 
   $installed-background: #333;

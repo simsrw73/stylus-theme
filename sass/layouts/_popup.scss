@@ -1,23 +1,18 @@
 #stylus-popup {
-  background-color: $color-primary;
+  background-color: $popup-background;
 
   #installed {
-    background-color: #fafafa;
+    background-color: $installed-background;
     padding: 0;
     box-shadow: none;
 
     .entry {
-      background-color: white;
-      color: $color-primary;
+      background-color: $installed-background;
+      color: $installed-text-color;
 
       &:nth-child(even) {
         background: none !important;
-        background-image: linear-gradient(
-          to right,
-          rgba(145, 208, 198, 0.3),
-          rgba(145, 208, 198, 0.2) 80%,
-          transparent 100%
-        ) !important;
+        background-image: $installed-item-alt-gradient !important;
       }
     }
   }

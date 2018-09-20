@@ -10,6 +10,7 @@
     h2 {
       padding-top: 1em;
       padding-bottom: 1em;
+      text-shadow: none;
     }
   }
 
@@ -52,5 +53,22 @@
   .can-update[data-details$="locally edited"] .update svg,
   .update-problem .check-update svg {
     fill: #cc0000 !important;
+  }
+
+  .expander {
+    color: $installed-text-color;
+  }
+
+  .highlight {
+    animation: highlight 4s cubic-bezier(0, 0.82, 0.47, 0.98);
+  }
+
+  @keyframes highlight {
+    from {
+      background-color: rgba(invert($installed-background), 0.8);
+    }
+    to {
+      background-color: none;
+    }
   }
 }
