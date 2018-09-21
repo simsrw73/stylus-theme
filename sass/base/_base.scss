@@ -20,8 +20,21 @@ h2 {
   font-variant: small-caps;
 }
 
+a {
+  color: white;
+
+  &:hover {
+    color: #aaa;
+  }
+}
+
 details {
   margin-top: 1em;
+  color: $color-accent !important;
+}
+
+label {
+  color: white;
 }
 
 button {
@@ -84,6 +97,10 @@ input:not([type="checkbox"]) {
   height: auto !important;
 }
 
+input {
+  border-radius: 0.25em;
+}
+
 input[type="checkbox"]:not(.slider):hover {
   background-color: $color-primary;
 
@@ -95,8 +112,4 @@ input[type="checkbox"]:not(.slider):hover {
 
 svg.svg-icon {
   fill: white !important;
-}
-
-input {
-  border-radius: 0.25em;
 }

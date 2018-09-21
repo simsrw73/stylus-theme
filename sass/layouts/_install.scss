@@ -1,0 +1,60 @@
+#stylus-install-usercss {
+  #header h1::before,
+  #header h1::after {
+    content: "" !important;
+  }
+
+  #header-content-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  h1 {
+    position: relative;
+    margin-bottom: 2em;
+    order: -1;
+  }
+
+  h3 {
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+  }
+
+  .meta-name {
+    &::before {
+      content: "{";
+      font-size: 1.2em;
+    }
+    &::after {
+      content: "}";
+      font-size: 1.2em;
+    }
+  }
+
+  .meta-version {
+    position: absolute;
+    right: 4em;
+    bottom: -1.5em;
+
+    &::before {
+      content: " \Av";
+      white-space: pre;
+    }
+  }
+
+  .meta-description {
+    order: -1;
+    margin-top: -1em;
+    margin-bottom: 2em;
+    color: #ddd;
+    font-style: italic;
+  }
+
+  #live-reload-install-hint {
+    margin-top: 0;
+  }
+
+  .external-link ul {
+    margin-bottom: 0;
+  }
+}

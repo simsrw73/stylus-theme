@@ -1,0 +1,18 @@
+#message-box {
+  #message-box-contents {
+    color: black;
+  }
+
+  #message-box-buttons {
+    button {
+      color: #333;
+      border-color: #777;
+
+      &:hover {
+        background-color: #ddd !important;
+        border-color: #333;
+        color: #333 !important;
+      }
+    }
+  }
+}

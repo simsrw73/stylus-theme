@@ -9,11 +9,11 @@
 #header h1 {
   letter-spacing: 0.05em;
 
-  &:before {
+  &::before {
     content: "{";
     font-size: 1.2em;
   }
-  &:after {
+  &::after {
     content: "}";
     font-size: 1.2em;
   }
