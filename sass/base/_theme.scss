@@ -4,6 +4,14 @@ $theme: "Dark";
 
 // Light
 
+$color-selection: transparentize($color-primary, 0.7);
+$color-control-background: white;
+$color-control-color: white;
+
+$color-ws-selection: transparentize($color-primary, 0.7);
+$color-ws-control-background: transparentize($color-primary, 0.7);
+$color-ws-control-color: transparentize($color-primary, 0.2);
+
 $header-background-color: $color-primary;
 $popup-background: $color-primary;
 
@@ -31,6 +39,14 @@ $installed-badge-usercss-background-color: rgba($color-primary, 0.8) !default;
 
 // Dark Theme
 @if ($theme == "Dark") {
+  $color-selection: transparentize($color-accent, 0.8);
+  $color-control-background: transparentize($color-accent, 0.8);
+  $color-control-color: transparentize($color-accent, 0.6);
+
+  $color-ws-selection: transparentize($color-accent, 0.6);
+  $color-ws-control-background: transparentize($color-accent, 0.8);
+  $color-ws-control-color: transparentize($color-accent, 0.2);
+
   $header-background-color: #2d7070;
   $popup-background: #333;
 

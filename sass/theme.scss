@@ -11,9 +11,11 @@
 @import "./components/scrollbar";
 @import "./components/installed";
 @import "./components/editor";
+@import "./components/msgs";
 
 @import "./layouts/header";
 @import "./layouts/install";
 @import "./layouts/manage";
+@import "./layouts/edit";
 @import "./layouts/popup";
 @import "./layouts/message-box";

@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name          Stylus Theme
-@description   A theme based on the Stylus logo.
-@version       0.1.6
+@description   A theme based on the Stylus logo
+@version       0.1.8
 @author        Randy W. Sims <simsrw73@gmail.com>
 @license       MIT
 @namespace     https://github.com/simsrw73
@@ -35,62 +35,124 @@
   .fa, .fas, #stylus-manage #manage-options-button:before, #stylus-manage #manage-shortcuts-button:before, #stylus-manage #find-editor-styles > button:before { font-family: 'Font Awesome 5 Free'; font-weight: 900; }
   /* Material Icons */
   @font-face { font-family: "Material Icons"; font-style: normal; font-weight: 400; src: url(https://fonts.gstatic.com/s/materialicons/v38/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2) format("woff2"); }
-  html, body { background-color: #91d0c6; color: white; letter-spacing: 0.025em; font-family: "Open Sans", sans-serif; }
-  h1, h2, h3 { letter-spacing: 0.025em; color: #26fefa; }
+  /* https://www.heropatterns.com/ */
+  /* https://www.heropatterns.com/ */
+  html { background-color: #333; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%2326FEFA' fill-opacity='0.1' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E"); }
+  html, body { color: white; letter-spacing: 0.025em; font-family: "Open Sans", sans-serif; }
+  h1, h2, h3 { letter-spacing: 0.025em; color: #26fefa; text-shadow: 1px 0 2px rgba(0, 0, 0, 0.3); }
   h2 { font-variant: small-caps; }
-  details { margin-top: 1em; }
-  button { padding-top: 0.25em; padding-bottom: 0.25em; margin: 0.25em; -webkit-border-radius: 0.25em; border-radius: 0.25em; border: 1px solid white; background-color: #00352d; color: white; background-image: none; cursor: pointer; }
-  button:hover { background-color: #91d0c6 !important; color: #00352d !important; }
-  select { color: white; border: 1px solid white; background-color: transparent; -webkit-border-radius: 0.25em; border-radius: 0.25em; padding-right: 1.25em; font-weight: 300; letter-spacing: 0.025em; width: auto !important; }
+  a { color: white; }
+  a:hover { color: #aaa; }
+  details { margin-top: 1em; color: #26fefa !important; }
+  label { color: white; }
+  button { padding-top: 0.25em; padding-bottom: 0.25em; margin: 0.25em; -webkit-border-radius: 0.25em; border-radius: 0.25em; border: 1px solid rgba(38, 254, 250, 0.4); background-color: transparent; color: white; background-image: none; margin-bottom: 0.5em; cursor: pointer; }
+  button:hover { background-color: rgba(38, 254, 250, 0.2) !important; border: 1px solid rgba(38, 254, 250, 0.4) !important; color: white !important; }
+  select { color: white; border: 1px solid rgba(38, 254, 250, 0.4); background-color: transparent; -webkit-border-radius: 0.25em; border-radius: 0.25em; padding-right: 1.25em; font-weight: 300; letter-spacing: 0.025em; width: auto !important; height: 2em !important; padding: 3px 18px 3px 6px; margin-bottom: 0.5em; }
+  select:hover { background-color: rgba(38, 254, 250, 0.2); }
   select optgroup { background-color: rgba(145, 208, 198, 0.7); color: #00352d; }
   select option { background-color: #91d0c6; color: #00352d; }
   button:disabled, select:disabled, option:disabled, select[disabled] > option { color: rgba(255, 255, 255, 0.4); border-color: rgba(255, 255, 255, 0.4); background-color: rgba(255, 255, 255, 0.15); }
   button:disabled:hover, select:disabled:hover, option:disabled:hover, select[disabled] > option:hover { color: rgba(255, 255, 255, 0.4) !important; border-color: rgba(255, 255, 255, 0.4) !important; background-color: rgba(255, 255, 255, 0.15) !important; cursor: default; }
-  input:not([type="checkbox"]) { padding-top: 0.25em !important; padding-bottom: 0.25em !important; height: auto !important; }
+  input { -webkit-border-radius: 0.25em; border-radius: 0.25em; background-color: rgba(38, 254, 250, 0.2) !important; border: 1px solid rgba(38, 254, 250, 0.4) !important; margin-bottom: 0.5em; }
+  input:not([type="checkbox"]) { padding-top: 0.25em !important; padding-bottom: 0.25em !important; height: 2em !important; }
+  input[type="checkbox"]:not(.slider) { border: 1px solid rgba(38, 254, 250, 0.4); }
   input[type="checkbox"]:not(.slider):hover { background-color: #00352d; }
   input[type="checkbox"]:not(.slider):hover:active, input[type="checkbox"]:not(.slider):hover:hover { background-color: #00352d; }
-  svg.svg-icon { fill: white !important; }
-  input { -webkit-border-radius: 0.25em; border-radius: 0.25em; }
-  #installed { -webkit-box-shadow: 2px 0 8px rgba(0, 0, 0, 0.6); box-shadow: 2px 0 8px rgba(0, 0, 0, 0.6); padding-top: 2em; padding-bottom: 2em; background-color: white; }
-  #installed .entry { background-color: white !important; }
-  #installed .entry h2 { padding-top: 1em; padding-bottom: 1em; }
-  #installed .entry.even { background: none !important; background-image: -webkit-gradient(linear, left top, right top, from(rgba(145, 208, 198, 0.3)), color-stop(80%, rgba(145, 208, 198, 0.2)), to(transparent)) !important; background-image: -webkit-linear-gradient(left, rgba(145, 208, 198, 0.3), rgba(145, 208, 198, 0.2) 80%, transparent 100%) !important; background-image: linear-gradient(to right, rgba(145, 208, 198, 0.3), rgba(145, 208, 198, 0.2) 80%, transparent 100%) !important; }
-  .style-name-link { color: #00352d; }
-  .disabled h2::after { background-color: rgba(0, 53, 45, 0.5); color: white; }
-  .entry.usercss .style-name-link::after { background-color: #00352d; color: white; }
-  .disabled h2 .style-name-link, .disabled h2::after, .disabled .actions, .disabled .applies-to { opacity: 1; }
-  .target { color: #00352d; font-weight: 400; }
-  .actions .svg-icon { fill: #00352d !important; }
-  .can-update[data-details$="locally edited"] .update svg, .update-problem .check-update svg { fill: #cc0000 !important; }
+  ::-webkit-input-placeholder { color: #26fefa; opacity: 1; }
+  :-ms-input-placeholder { color: #26fefa; opacity: 1; }
+  ::-ms-input-placeholder { color: #26fefa; opacity: 1; }
+  ::placeholder { color: #26fefa; opacity: 1; }
+  svg.svg-icon { fill: #26fefa !important; }
+  svg.svg-icon.checked { fill: #26fefa !important; }
+  ::-webkit-scrollbar { width: 0.8rem; height: 0.8rem; }
+  ::-webkit-scrollbar-thumb { -webkit-border-radius: 2px; border-radius: 2px; background: #00352d; -webkit-box-shadow: inset 0 0 2px #26fefa; box-shadow: inset 0 0 2px #26fefa; }
+  ::-webkit-scrollbar-track { background-color: #333; -webkit-box-shadow: inset 0 0 2px #26fefa; box-shadow: inset 0 0 2px #26fefa; }
+  #installed { -webkit-box-shadow: 2px 0 8px rgba(0, 0, 0, 0.6); box-shadow: 2px 0 8px rgba(0, 0, 0, 0.6); padding-top: 2em; padding-bottom: 2em; background-color: #333; }
+  #installed .entry { background-color: #333 !important; }
+  #installed .entry h2 { padding-top: 1em; padding-bottom: 1em; text-shadow: none; }
+  #installed .entry.even { background: none !important; background-image: -webkit-gradient(linear, left top, right top, from(rgba(38, 254, 250, 0.3)), color-stop(70%, rgba(0, 53, 45, 0.2)), color-stop(90%, rgba(0, 53, 45, 0.1)), to(transparent)) !important; background-image: -webkit-linear-gradient(left, rgba(38, 254, 250, 0.3), rgba(0, 53, 45, 0.2) 70%, rgba(0, 53, 45, 0.1) 90%, transparent 100%) !important; background-image: linear-gradient(to right, rgba(38, 254, 250, 0.3), rgba(0, 53, 45, 0.2) 70%, rgba(0, 53, 45, 0.1) 90%, transparent 100%) !important; }
+  #installed .style-name-link { color: #26fefa; }
+  #installed .disabled h2::after { background-color: rgba(145, 208, 198, 0.3); color: #ccc; }
+  #installed .entry.usercss .style-name-link::after { background-color: rgba(145, 208, 198, 0.8); color: #00352d; font-weight: 700; }
+  #installed .disabled h2 .style-name-link, #installed .disabled h2::after, #installed .disabled .actions, #installed .disabled .applies-to { opacity: 1; }
+  #installed .target { color: #26fefa; font-weight: 400; }
+  #installed .actions .svg-icon { fill: #26fefa !important; }
+  #installed .can-update[data-details$="locally edited"] .update svg, #installed .update-problem .check-update svg { fill: #cc0000 !important; }
+  #installed .expander { color: #26fefa; }
+  #installed .highlight { -webkit-animation: highlight 4s cubic-bezier(0, 0.82, 0.47, 0.98); animation: highlight 4s cubic-bezier(0, 0.82, 0.47, 0.98); }
+  @-webkit-keyframes highlight { from { background-color: rgba(204, 204, 204, 0.8); }
+    to { background-color: none; } }
+  @keyframes highlight { from { background-color: rgba(204, 204, 204, 0.8); }
+    to { background-color: none; } }
   .CodeMirror { font-family: "Source Sans Pro", monospace; }
-  #header { background-color: #00352d; border-right: 1px solid transparent; overflow-x: hidden; overflow-y: auto; -webkit-box-shadow: 2px 0 16px rgba(0, 0, 0, 0.6); box-shadow: 2px 0 16px rgba(0, 0, 0, 0.6); }
+  body.all-styles-hidden-by-filters:before { top: 0; z-index: 1; color: rgba(38, 254, 250, 0.8); }
+  body.all-styles-hidden-by-filters:after { top: 20px; left: -webkit-calc(7rem + var(--header-width)); left: calc(7rem + var(--header-width)); color: rgba(38, 254, 250, 0.8); z-index: 1; }
+  #header { background-color: #2d7070; border-right: 1px solid transparent; overflow-x: hidden; overflow-y: auto; -webkit-box-shadow: 2px 0 16px rgba(0, 0, 0, 0.6); box-shadow: 2px 0 16px rgba(0, 0, 0, 0.6); }
   #header h1 { letter-spacing: 0.05em; }
-  #header h1:before { content: "{"; font-size: 1.2em; }
-  #header h1:after { content: "}"; font-size: 1.2em; }
-  #stylus-manage { /* https://www.heropatterns.com/ */ background-color: #fafafa; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%2300352D' fill-opacity='0.1' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E"); }
+  #header h1::before { content: "{"; font-size: 1.2em; }
+  #header h1::after { content: "}"; font-size: 1.2em; }
+  #stylus-install-usercss #header h1::before, #stylus-install-usercss #header h1::after { content: "" !important; }
+  #stylus-install-usercss #header-content-wrapper { display: -webkit-box; display: -webkit-flex; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; flex-direction: column; }
+  #stylus-install-usercss h1 { position: relative; margin-bottom: 2em; -webkit-box-ordinal-group: 0; -webkit-order: -1; order: -1; }
+  #stylus-install-usercss h3 { margin-top: 1.5em; margin-bottom: 0.5em; }
+  #stylus-install-usercss .meta-name::before { content: "{"; font-size: 1.2em; }
+  #stylus-install-usercss .meta-name::after { content: "}"; font-size: 1.2em; }
+  #stylus-install-usercss .meta-version { position: absolute; right: 4em; bottom: -1.5em; }
+  #stylus-install-usercss .meta-version::before { content: " \Av"; white-space: pre; }
+  #stylus-install-usercss .meta-description { -webkit-box-ordinal-group: 0; -webkit-order: -1; order: -1; margin-top: -1em; margin-bottom: 2em; color: #ddd; font-style: italic; }
+  #stylus-install-usercss #live-reload-install-hint { margin-top: 0; }
+  #stylus-install-usercss .external-link ul { margin-bottom: 0; }
   #stylus-manage #manage-heading { margin-bottom: 0; }
-  #stylus-manage #check-all-updates, #stylus-manage #add-style-label { border: none; padding: 0; text-decoration: underline; }
+  #stylus-manage #update-check { margin-bottom: 0; }
+  #stylus-manage #update-all { margin-left: 1rem; margin-bottom: 0; }
+  #stylus-manage #check-all-updates, #stylus-manage #apply-all-updates, #stylus-manage #check-all-updates-force, #stylus-manage #add-style-label { position: relative; margin-right: 0.5em; padding: 0; border: none; overflow: visible; }
+  #stylus-manage #check-all-updates::after, #stylus-manage #apply-all-updates::after, #stylus-manage #check-all-updates-force::after, #stylus-manage #add-style-label::after { content: ""; position: absolute; height: 5px; width: 100%; bottom: 0; left: 4px; background-color: rgba(38, 254, 250, 0.3); -webkit-border-radius: 2px; border-radius: 2px; -webkit-transition: all 200ms ease-in-out; transition: all 200ms ease-in-out; }
+  #stylus-manage #check-all-updates:hover, #stylus-manage #apply-all-updates:hover, #stylus-manage #check-all-updates-force:hover, #stylus-manage #add-style-label:hover { border: none !important; background-color: transparent !important; }
+  #stylus-manage #check-all-updates:hover::after, #stylus-manage #apply-all-updates:hover::after, #stylus-manage #check-all-updates-force:hover::after, #stylus-manage #add-style-label:hover::after { height: 0.8em; background-color: rgba(38, 254, 250, 0.2); }
   #stylus-manage #header details summary { padding-bottom: 0.5em; }
   #stylus-manage .settings-column:first-child { display: -webkit-box; display: -webkit-flex; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; flex-direction: column; }
   #stylus-manage .settings-column:first-child #style-actions { margin-top: 1em; }
   #stylus-manage .settings-column:first-child #sort-wrapper { -webkit-box-ordinal-group: 2; -webkit-order: 1; order: 1; margin-top: 0.75em; }
   #stylus-manage .settings-column:first-child #sort-wrapper:before { content: "Sort:"; display: block; width: 100%; color: #26fefa; font-size: 18px; font-weight: 700; font-variant: small-caps; margin-bottom: 0.5em; }
-  #stylus-manage .settings-column:first-child #filters { border: 1px solid transparent; -webkit-box-ordinal-group: 3; -webkit-order: 2; order: 2; }
+  #stylus-manage .settings-column:first-child #sort-wrapper #manage\.newUI\.sort { padding: 0.25em; background-color: rgba(38, 254, 250, 0.2); border: 1px solid rgba(38, 254, 250, 0.4); color: #26fefa; }
+  #stylus-manage #filters { border: 1px solid transparent; -webkit-box-ordinal-group: 3; -webkit-order: 2; order: 2; }
+  #stylus-manage #filters .filter-selection { -webkit-border-radius: 4px !important; border-radius: 4px !important; }
+  #stylus-manage #filters .filter-selection select { height: auto !important; padding: 0 !important; margin-left: 0.5em; }
+  #stylus-manage #filters .filter-selection:hover { background-color: rgba(38, 254, 250, 0.2) !important; -webkit-border-radius: 4px !important; border-radius: 4px !important; }
+  #stylus-manage #filters select:hover { background: transparent; }
+  #stylus-manage #filters #manage\.onlyEnabled\.invert { width: 133px !important; }
+  #stylus-manage #filters #manage\.onlyLocal\.invert { width: 168px !important; }
+  #stylus-manage #filters #manage\.onlyUsercss\.invert { width: 156px !important; }
   #stylus-manage #manage-text a { color: #91d0c6; }
   #stylus-manage select#manage { padding-top: 0.25em !important; padding-bottom: 0.25em !important; height: auto !important; }
-  #stylus-manage .active #filters-stats { background-color: #26fefa; color: black; border: none; font-size: 10px; font-weight: 400; padding: 2px 8px; -webkit-border-top-left-radius: 4px; border-top-left-radius: 4px; -webkit-border-bottom-left-radius: 4px; border-bottom-left-radius: 4px; margin-bottom: -4px; padding-right: 0; cursor: default; }
+  #stylus-manage .active #filters-stats { background-color: #26fefa; color: black; border: none; font-size: 10px; font-weight: 400; padding: 2px 8px; -webkit-border-top-left-radius: 4px; border-top-left-radius: 4px; -webkit-border-bottom-left-radius: 4px; border-bottom-left-radius: 4px; margin-bottom: -2px; padding-right: 0; cursor: default; }
   #stylus-manage a#reset-filters { background-color: #26fefa; fill: #00352d; -webkit-border-top-right-radius: 4px; border-top-right-radius: 4px; -webkit-border-bottom-right-radius: 4px; border-bottom-right-radius: 4px; margin: 5px 0 2px 0; padding: 0; }
   #stylus-manage #reset-filters svg { width: auto; height: 18px; padding: 2px; fill: black !important; }
+  #stylus-manage #options #manage\.newUI\.targets { padding-left: 0.25em; color: #26fefa; }
   #stylus-manage #options-buttons { position: relative; margin-top: 1em; margin-bottom: 1em; border-top: solid 1px #91d0c6; height: 24px; padding-top: 0.5em; }
   #stylus-manage #manage-options-button, #stylus-manage #manage-shortcuts-button, #stylus-manage #find-editor-styles > button { text-overflow: clip; color: transparent; width: 0; height: 0; padding: 0; margin: 0; max-width: none; background-color: transparent; background: none; border: none; cursor: pointer; }
-  #stylus-manage #manage-options-button:before, #stylus-manage #manage-shortcuts-button:before, #stylus-manage #find-editor-styles > button:before { color: white; position: absolute; width: 1em; height: 1em; }
+  #stylus-manage #manage-options-button:before, #stylus-manage #manage-shortcuts-button:before, #stylus-manage #find-editor-styles > button:before { color: #26fefa; position: absolute; width: 1em; height: 1em; }
+  #stylus-manage #manage-options-button:hover, #stylus-manage #manage-shortcuts-button:hover, #stylus-manage #find-editor-styles > button:hover { border: none !important; }
   #stylus-manage #manage-options-button:before { content: "\f013"; font-weight: 400; font-size: 20px; left: 0; }
   #stylus-manage #manage-shortcuts-button:before { content: "\f11c"; font-weight: 400; font-size: 20px; left: 34px; }
   #stylus-manage #find-editor-styles > button:before { content: "\f53f"; font-weight: 400; font-size: 20px; left: 72px; }
-  #stylus-popup { background-color: #00352d; }
-  #stylus-popup #installed { background-color: #fafafa; padding: 0; -webkit-box-shadow: none; box-shadow: none; }
-  #stylus-popup #installed .entry { background-color: white; color: #00352d; }
-  #stylus-popup #installed .entry:nth-child(even) { background: none !important; background-image: -webkit-gradient(linear, left top, right top, from(rgba(145, 208, 198, 0.3)), color-stop(80%, rgba(145, 208, 198, 0.2)), to(transparent)) !important; background-image: -webkit-linear-gradient(left, rgba(145, 208, 198, 0.3), rgba(145, 208, 198, 0.2) 80%, transparent 100%) !important; background-image: linear-gradient(to right, rgba(145, 208, 198, 0.3), rgba(145, 208, 198, 0.2) 80%, transparent 100%) !important; }
+  #stylus-manage #options-buttons button, #stylus-manage #backup-buttons button { margin: 0 0.5rem 0.5rem 0; }
+  #stylus-manage #backup #backup-message { color: white; }
+  #stylus-edit #sections .section label, #stylus-edit #sections .section button, #stylus-edit #sections .section select, #stylus-edit #sections .section input { color: rgba(38, 254, 250, 0.8); }
+  #stylus-edit #sections .section button, #stylus-edit #sections .section input, #stylus-edit #sections .section select { background-color: rgba(38, 254, 250, 0.2) !important; border-color: rgba(38, 254, 250, 0.8) !important; }
+  #stylus-edit #sections .section button:hover, #stylus-edit #sections .section input:hover, #stylus-edit #sections .section select:hover { background-color: rgba(38, 254, 250, 0.4) !important; color: rgba(38, 254, 250, 0.8) !important; }
+  #stylus-edit #sections .section svg.svg-icon { fill: rgba(38, 254, 250, 0.4) !important; }
+  #stylus-edit #sections .section .remove-applies-to, #stylus-edit #sections .section .add-applies-to { margin-left: 4px; }
+  #stylus-edit #sections .section .remove-applies-to:hover, #stylus-edit #sections .section .add-applies-to:hover { background-color: rgba(38, 254, 250, 0.2) !important; -webkit-border-radius: 50%; border-radius: 50%; }
+  #stylus-popup { background-color: #333; }
+  #stylus-popup #installed { background-color: #333; padding: 0; -webkit-box-shadow: none; box-shadow: none; }
+  #stylus-popup #installed .entry { background-color: #333; color: #26fefa; }
+  #stylus-popup #installed .entry label { color: #26fefa; }
+  #stylus-popup #installed .entry:nth-child(even) { background: none !important; background-image: -webkit-gradient(linear, left top, right top, from(rgba(38, 254, 250, 0.3)), color-stop(70%, rgba(0, 53, 45, 0.2)), color-stop(90%, rgba(0, 53, 45, 0.1)), to(transparent)) !important; background-image: -webkit-linear-gradient(left, rgba(38, 254, 250, 0.3), rgba(0, 53, 45, 0.2) 70%, rgba(0, 53, 45, 0.1) 90%, transparent 100%) !important; background-image: linear-gradient(to right, rgba(38, 254, 250, 0.3), rgba(0, 53, 45, 0.2) 70%, rgba(0, 53, 45, 0.1) 90%, transparent 100%) !important; }
   #stylus-popup .actions { margin: 0 !important; padding: 0 var(--outer-padding); }
   #stylus-popup .actions a { color: #91d0c6; }
+  #message-box #message-box-contents { color: black; }
+  #message-box #message-box-buttons button { color: #333; border-color: #777; }
+  #message-box #message-box-buttons button:hover { background-color: #ddd !important; border-color: #333; color: #333 !important; }
+  #help-popup.big { background-color: #333; }
 }

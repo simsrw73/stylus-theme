@@ -1,8 +1,11 @@
 // Styles for base elements
+html {
+  background-color: $workspace-color;
+  background-image: $workspace-image;
+}
 
 html,
 body {
-  background-color: $color-secondary;
   color: white;
   letter-spacing: 0.025em;
   font-family: $font-stack;
@@ -42,27 +45,36 @@ button {
   padding-bottom: 0.25em;
   margin: 0.25em;
   border-radius: 0.25em;
-  border: 1px solid white;
+  border: 1px solid $color-control-color;
   background-color: transparent;
   color: white;
   background-image: none;
+  margin-bottom: 0.5em;
   cursor: pointer;
 
   &:hover {
-    background-color: $color-secondary !important;
-    color: $color-primary !important;
+    background-color: $color-selection !important;
+    border: 1px solid $color-control-color !important;
+    color: white !important;
   }
 }
 
 select {
   color: white;
-  border: 1px solid white;
+  border: 1px solid $color-control-color;
   background-color: transparent;
   border-radius: 0.25em;
   padding-right: 1.25em;
   font-weight: 300;
   letter-spacing: 0.025em;
   width: auto !important;
+  height: 2em !important;
+  padding: 3px 18px 3px 6px;
+  margin-bottom: 0.5em;
+
+  &:hover {
+    background-color: $color-selection;
+  }
 
   optgroup {
     background-color: rgba(145, 208, 198, 0.7);
@@ -91,14 +103,21 @@ select[disabled] > option {
   }
 }
 
+input {
+  border-radius: 0.25em;
+  background-color: $color-control-background !important;
+  border: 1px solid $color-control-color !important;
+  margin-bottom: 0.5em;
+}
+
 input:not([type="checkbox"]) {
   padding-top: 0.25em !important;
   padding-bottom: 0.25em !important;
-  height: auto !important;
+  height: 2em !important;
 }
 
-input {
-  border-radius: 0.25em;
+input[type="checkbox"]:not(.slider) {
+  border: 1px solid $color-control-color;
 }
 
 input[type="checkbox"]:not(.slider):hover {
@@ -110,6 +129,15 @@ input[type="checkbox"]:not(.slider):hover {
   }
 }
 
+::placeholder {
+  color: $color-accent;
+  opacity: 1;
+}
+
 svg.svg-icon {
-  fill: white !important;
+  fill: $color-accent !important;
+}
+
+svg.svg-icon.checked {
+  fill: $color-accent !important;
 }

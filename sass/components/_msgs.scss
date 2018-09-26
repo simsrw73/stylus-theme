@@ -1,0 +1,12 @@
+body.all-styles-hidden-by-filters:before {
+  top: 0;
+  z-index: 1;
+  color: $color-ws-control-color;
+}
+
+body.all-styles-hidden-by-filters:after {
+  top: 20px;
+  left: calc(7rem + var(--header-width));
+  color: $color-ws-control-color;
+  z-index: 1;
+}
