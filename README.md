@@ -4,8 +4,8 @@
 
 A theme based on the Stylus logo.
 
-![Preview Light Theme](screenshots/preview-light.png)
 ![Preview Dark Theme](screenshots/preview-dark.png)
+![Preview Light Theme](screenshots/preview-light.png)
 
 
 ## Using the Theme
