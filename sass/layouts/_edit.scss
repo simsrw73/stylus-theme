@@ -1,36 +1,6 @@
-#stylus-edit #sections .section {
-  label,
-  button,
-  select,
-  input {
-    color: $color-ws-control-color;
-  }
-
-  button,
-  input,
-  select {
-    background-color: $color-ws-control-background !important;
-    border-color: $color-ws-control-color !important;
-
-    &:hover {
-      background-color: $color-ws-selection !important;
-      color: $color-ws-control-color !important;
-    }
-  }
-
-  svg.svg-icon {
-    fill: $color-ws-selection !important;
-  }
-
-  .remove-applies-to,
-  .add-applies-to {
-    margin-left: 4px;
-
-    &:hover {
-      background-color: $color-selection !important;
-      border-radius: 50%;
-    }
-  }
-  .edit-actions {
+#stylus-edit {
+  #editor\.tabSize {
+    color: white;
+    padding-left: 0.5em;
   }
 }

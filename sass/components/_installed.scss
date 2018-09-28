@@ -46,11 +46,15 @@
     font-weight: 400;
   }
 
+  .svg-icon.checked {
+    fill: $installed-text-color !important;
+  }
+
   .actions .svg-icon {
     fill: $installed-text-color !important;
   }
 
-  .can-update[data-details$="locally edited"] .update svg,
+  .can-update[data-details$='locally edited'] .update svg,
   .update-problem .check-update svg {
     fill: #cc0000 !important;
   }

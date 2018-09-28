@@ -10,3 +10,9 @@ body.all-styles-hidden-by-filters:after {
   color: $color-ws-control-color;
   z-index: 1;
 }
+
+.newUI .updater-icons > :not(.check-update):after {
+  border: 1px solid $color-control-color;
+  background-color: #333;
+  color: $color-accent;
+}

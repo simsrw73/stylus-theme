@@ -23,7 +23,7 @@
     overflow: visible;
 
     &::after {
-      content: "";
+      content: '';
       position: absolute;
       height: 5px;
       width: 100%;
@@ -63,7 +63,7 @@
       margin-top: 0.75em;
 
       &:before {
-        content: "Sort:";
+        content: 'Sort:';
         display: block;
         width: 100%;
         color: #26fefa;
@@ -74,11 +74,18 @@
         text-shadow: 1px 0 2px rgba(0, 0, 0, 0.3);
       }
 
-      #manage\.newUI\.sort {
-        padding: 0.25em;
-        background-color: $color-control-background;
-        border: 1px solid $color-control-color;
-        color: $color-accent;
+      .sorter-selection {
+        #manage\.newUI\.sort {
+          padding: 0.25em;
+          background-color: $color-control-background;
+          border: 1px solid $color-control-color;
+          color: white;
+        }
+
+        svg.svg-icon.select-arrow,
+        svg.svg-icon #svg-icon-select-arrow {
+          fill: $color-accent !important;
+        }
       }
     }
   }
@@ -117,6 +124,12 @@
     #manage\.onlyUsercss\.invert {
       width: 156px !important;
     }
+
+    #search-wrapper {
+      #search {
+        color: white;
+      }
+    }
   }
 
   #manage-text {
@@ -147,7 +160,7 @@
 
   a#reset-filters {
     background-color: $color-accent;
-    fill: $color-primary;
+    fill: #333;
     border-top-right-radius: 4px;
     border-bottom-right-radius: 4px;
     margin: 5px 0 2px 0;
@@ -158,13 +171,13 @@
     width: auto;
     height: 18px;
     padding: 2px;
-    fill: black !important;
+    fill: #333 !important;
   }
 
   #options {
     #manage\.newUI\.targets {
       padding-left: 0.25em;
-      color: $color-accent;
+      color: white;
     }
   }
 
@@ -181,7 +194,7 @@
   #manage-shortcuts-button,
   #find-editor-styles > button {
     &:before {
-      color: $color-accent;
+      color: white;
       position: absolute;
       width: 1em;
       height: 1em;
@@ -248,13 +261,13 @@
     box-shadow: 0 -2px 8px -2px rgba(0, 0, 0, 0.2);
 
     & > :not(:last-child):after {
-      content: "\2022";
+      content: '\2022';
       margin: 0 0 0 0.5em;
       font-size: 0.8em;
     }
 
     &::before {
-      content: "";
+      content: '';
       display: block;
       width: 120px;
       height: 120px;

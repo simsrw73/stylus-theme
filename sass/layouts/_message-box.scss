@@ -1,17 +1,65 @@
 #message-box {
+  #message-box-title {
+    background-color: $header-background-color;
+  }
+
+  svg#sections-help {
+    fill: white;
+  }
+
   #message-box-contents {
-    color: black;
+    color: #333;
   }
 
   #message-box-buttons {
     button {
-      color: #333;
+      padding: 0.5em 2em;
       border-color: #777;
+      color: #333;
 
       &:hover {
-        background-color: #ddd !important;
-        border-color: #333;
-        color: #333 !important;
+        background-color: rgba(0, 0, 0, 0.1) !important;
+        border-color: #333 !important;
+        color: #000 !important;
+      }
+    }
+
+    label {
+      color: #333;
+    }
+
+    input[type='checkbox'] {
+      color: #333;
+      border-color: #333 !important;
+      background-color: transparent !important;
+    }
+  }
+}
+
+#help-popup {
+  color: #333;
+  background-color: white;
+
+  .title {
+    color: white;
+    background-color: $header-background-color;
+  }
+  svg#sections-help {
+    fill: white;
+  }
+
+  .keymap-list {
+    color: #333;
+
+    input {
+      background-color: $header-background-color !important;
+      color: white !important;
+      font-weight: 400;
+    }
+
+    tr {
+      &:nth-child(odd) {
+        background-color: rgba($color-accent, 0.2);
       }
     }
   }
@@ -19,4 +67,8 @@
 
 #help-popup.big {
   background-color: #333;
+
+  svg#sections-help {
+    fill: white;
+  }
 }

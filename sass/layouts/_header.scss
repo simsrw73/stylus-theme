@@ -4,17 +4,26 @@
   overflow-x: hidden;
   overflow-y: auto;
   box-shadow: 2px 0 16px rgba(0, 0, 0, 0.6);
-}
 
-#header h1 {
-  letter-spacing: 0.05em;
+  h1 {
+    letter-spacing: 0.05em;
 
-  &::before {
-    content: "{";
-    font-size: 1.2em;
+    &::before {
+      content: '{';
+      font-size: 1.2em;
+    }
+    &::after {
+      content: '}';
+      font-size: 1.2em;
+    }
   }
-  &::after {
-    content: "}";
-    font-size: 1.2em;
+
+  svg.svg-icon {
+    fill: $color-accent;
+  }
+
+  .svg-icon.checked,
+  .svg-icon.select-arrow {
+    fill: white !important;
   }
 }

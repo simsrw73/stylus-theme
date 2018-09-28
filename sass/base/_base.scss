@@ -51,6 +51,7 @@ button {
   background-image: none;
   margin-bottom: 0.5em;
   cursor: pointer;
+  transition: all 200ms ease-in-out;
 
   &:hover {
     background-color: $color-selection !important;
@@ -71,6 +72,7 @@ select {
   height: 2em !important;
   padding: 3px 18px 3px 6px;
   margin-bottom: 0.5em;
+  transition: background-color 200ms ease-in-out;
 
   &:hover {
     background-color: $color-selection;
@@ -91,14 +93,14 @@ button:disabled,
 select:disabled,
 option:disabled,
 select[disabled] > option {
-  color: rgba(255, 255, 255, 0.4);
-  border-color: rgba(255, 255, 255, 0.4);
-  background-color: rgba(255, 255, 255, 0.15);
+  color: #aaa;
+  border-color: #aaa;
+  background-color: transparent;
 
   &:hover {
-    color: rgba(255, 255, 255, 0.4) !important;
-    border-color: rgba(255, 255, 255, 0.4) !important;
-    background-color: rgba(255, 255, 255, 0.15) !important;
+    color: #aaa !important;
+    border-color: #aaa !important;
+    background-color: transparent !important;
     cursor: default;
   }
 }
@@ -110,17 +112,17 @@ input {
   margin-bottom: 0.5em;
 }
 
-input:not([type="checkbox"]) {
+input:not([type='checkbox']) {
   padding-top: 0.25em !important;
   padding-bottom: 0.25em !important;
   height: 2em !important;
 }
 
-input[type="checkbox"]:not(.slider) {
+input[type='checkbox']:not(.slider) {
   border: 1px solid $color-control-color;
 }
 
-input[type="checkbox"]:not(.slider):hover {
+input[type='checkbox']:not(.slider):hover {
   background-color: $color-primary;
 
   &:active,
@@ -130,14 +132,6 @@ input[type="checkbox"]:not(.slider):hover {
 }
 
 ::placeholder {
-  color: $color-accent;
+  color: #eee;
   opacity: 1;
-}
-
-svg.svg-icon {
-  fill: $color-accent !important;
-}
-
-svg.svg-icon.checked {
-  fill: $color-accent !important;
 }
