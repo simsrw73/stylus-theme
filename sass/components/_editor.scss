@@ -1,3 +1,26 @@
 .CodeMirror {
-  font-family: "Source Sans Pro", monospace;
+  font-family: 'Source Sans Pro', monospace;
+
+  .CodeMirror-linewidget {
+    cursor: default;
+
+    .select-resizer,
+    .applies-value-wrapper {
+      margin: 0;
+    }
+
+    .applies-to-item {
+      margin-bottom: 1em;
+    }
+
+    button,
+    input,
+    select {
+      margin: 0 0 0 0.5em;
+    }
+
+    .test-regexp {
+      height: 24px;
+    }
+  }
 }

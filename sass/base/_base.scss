@@ -94,12 +94,12 @@ select:disabled,
 option:disabled,
 select[disabled] > option {
   color: #aaa;
-  border-color: #aaa;
+  border-color: #ccc;
   background-color: transparent;
 
   &:hover {
     color: #aaa !important;
-    border-color: #aaa !important;
+    border-color: #ccc !important;
     background-color: transparent !important;
     cursor: default;
   }
