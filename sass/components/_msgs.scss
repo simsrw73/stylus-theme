@@ -11,6 +11,7 @@ body.all-styles-hidden-by-filters:after {
   z-index: 1;
 }
 
+.newUI .can-update:not([data-details$='locally edited']) .update:after,
 .newUI .updater-icons > :not(.check-update):after {
   border: 1px solid $color-control-color;
   background-color: #333;

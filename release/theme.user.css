@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name          Stylus Theme
 @description   A theme based on the Stylus logo
-@version       0.2.0
+@version       0.2.2
 @author        Randy W. Sims <simsrw73@gmail.com>
 @license       MIT
 @namespace     https://github.com/simsrw73
@@ -97,7 +97,7 @@
   .CodeMirror .CodeMirror-linewidget .test-regexp { height: 24px; }
   body.all-styles-hidden-by-filters:before { top: 0; z-index: 1; color: rgba(38, 254, 250, 0.8); }
   body.all-styles-hidden-by-filters:after { top: 20px; left: -webkit-calc(7rem + var(--header-width)); left: calc(7rem + var(--header-width)); color: rgba(38, 254, 250, 0.8); z-index: 1; }
-  .newUI .updater-icons > :not(.check-update):after { border: 1px solid rgba(38, 254, 250, 0.4); background-color: #333; color: #26fefa; }
+  .newUI .can-update:not([data-details$='locally edited']) .update:after, .newUI .updater-icons > :not(.check-update):after { border: 1px solid rgba(38, 254, 250, 0.4); background-color: #333; color: #26fefa; }
   #header { background-color: #2d7070; border-right: 1px solid transparent; overflow-x: hidden; overflow-y: auto; -webkit-box-shadow: 2px 0 16px rgba(0, 0, 0, 0.6); box-shadow: 2px 0 16px rgba(0, 0, 0, 0.6); }
   #header h1 { letter-spacing: 0.05em; }
   #header h1::before { content: '{'; font-size: 1.2em; }
@@ -190,6 +190,15 @@
   #help-popup .keymap-list input { background-color: #2d7070 !important; color: white !important; font-weight: 400; }
   #help-popup .keymap-list tr:nth-child(odd) { background-color: rgba(38, 254, 250, 0.2); }
   #help-popup details { color: #333 !important; }
+  #help-popup .beautify-options label { color: #333; }
+  #help-popup .beautify-options select { color: #333; background: none; background-color: rgba(0, 0, 0, 0.1); border: none; }
+  #help-popup .beautify-options select:hover { background-color: rgba(0, 0, 0, 0.2) !important; border: none; color: #000 !important; }
+  #help-popup .beautify-options select option { background-color: rgba(0, 0, 0, 0.1); border: none; }
+  #help-popup .beautify-options .svg-icon.select-arrow { fill: #777; }
+  #help-popup .beautify-options .svg-icon.checked { margin-top: 4px; fill: #333; }
+  #help-popup .beautify-options input[type='checkbox'] { margin-top: 2px; background-color: transparent !important; border: 1px solid #333 !important; }
+  #help-popup button { padding: 0.5em 2em; border-color: #777; color: #333; }
+  #help-popup button:hover { background-color: rgba(0, 0, 0, 0.1) !important; border-color: #333 !important; color: #000 !important; }
   #help-popup.big { background-color: #333; }
   #help-popup.big svg#sections-help { fill: white; }
 }

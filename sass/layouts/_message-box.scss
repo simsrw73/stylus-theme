@@ -67,6 +67,57 @@
   details {
     color: #333 !important;
   }
+
+  .beautify-options {
+    label {
+      color: #333;
+    }
+
+    select {
+      color: #333;
+      background: none;
+      background-color: rgba(0, 0, 0, 0.1);
+      border: none;
+
+      &:hover {
+        background-color: rgba(0, 0, 0, 0.2) !important;
+        border: none;
+        color: #000 !important;
+      }
+
+      option {
+        background-color: rgba(0, 0, 0, 0.1);
+        border: none;
+      }
+    }
+
+    .svg-icon.select-arrow {
+      fill: #777;
+    }
+
+    .svg-icon.checked {
+      margin-top: 4px;
+      fill: #333;
+    }
+
+    input[type='checkbox'] {
+      margin-top: 2px;
+      background-color: transparent !important;
+      border: 1px solid #333 !important;
+    }
+  }
+
+  button {
+    padding: 0.5em 2em;
+    border-color: #777;
+    color: #333;
+
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.1) !important;
+      border-color: #333 !important;
+      color: #000 !important;
+    }
+  }
 }
 
 #help-popup.big {
