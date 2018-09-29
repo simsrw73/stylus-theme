@@ -1,0 +1,57 @@
+#stylus-options {
+  background-color: #333;
+  letter-spacing: 0;
+
+  input {
+    border-radius: 0;
+    background-color: transparent !important;
+    border: none !important;
+    margin-bottom: 0;
+  }
+
+  input[type='number'] {
+    background-color: $color-control-background !important;
+    border: 1px solid $color-control-color !important;
+    color: white;
+  }
+
+  input[type='radio'] {
+    padding: 0;
+    height: 13px !important;
+    background-color: transparent !important;
+    border-radius: 50%;
+    border: 1px solid $color-control-color !important;
+
+    &:checked::after {
+      background-color: $color-control-color !important;
+    }
+  }
+
+  .onoffswitch input:checked + span::before {
+    background-color: #2c9d9b;
+  }
+
+  button {
+    background-color: $color-ws-control-background !important;
+    border-color: $color-ws-control-color !important;
+    color: $color-ws-control-color !important;
+    transition: all 200ms ease-in-out;
+
+    &:hover {
+      background-color: $color-ws-selection !important;
+      color: $color-ws-control-color !important;
+    }
+  }
+
+  .block {
+    border-bottom: 1px dotted $color-ws-control-background;
+
+    &:nth-last-child(2) {
+      border-bottom: 1px solid $color-ws-control-background;
+    }
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+}
