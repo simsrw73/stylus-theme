@@ -1,6 +1,6 @@
 // Select Theme [ "Light" / "Dark" ]
 
-$theme: "Dark";
+$theme: 'Dark';
 
 // Light
 
@@ -31,14 +31,11 @@ $installed-item-alt-gradient: linear-gradient(
   transparent 100%
 ) !default;
 
-$installed-badge-disabled-color: white !default;
-$installed-badge-disabled-background-color: rgba($color-primary, 0.3) !default;
-
 $installed-badge-usercss-color: white !default;
 $installed-badge-usercss-background-color: rgba($color-primary, 0.8) !default;
 
 // Dark Theme
-@if ($theme == "Dark") {
+@if ($theme == 'Dark') {
   $color-selection: transparentize($color-accent, 0.8);
   $color-control-background: transparentize($color-accent, 0.8);
   $color-control-color: transparentize($color-accent, 0.6);
@@ -67,9 +64,6 @@ $installed-badge-usercss-background-color: rgba($color-primary, 0.8) !default;
     transparent 100%
   );
 
-  $installed-badge-disabled-color: #ccc;
-  $installed-badge-disabled-background-color: rgba($color-secondary, 0.3);
-
-  $installed-badge-usercss-color: $color-primary;
-  $installed-badge-usercss-background-color: rgba($color-secondary, 0.8);
+  $installed-badge-usercss-color: #eee;
+  $installed-badge-usercss-background-color: $color-control-color;
 }

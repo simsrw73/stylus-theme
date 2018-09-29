@@ -12,6 +12,17 @@
       padding-bottom: 1em;
       text-shadow: none;
     }
+
+    .style-name:hover::before {
+      background: linear-gradient(
+        to right,
+        $color-accent,
+        $color-accent 4px,
+        rgba(#000, 0.15) 5px,
+        rgba(#000, 0.1) 60%,
+        transparent
+      );
+    }
   }
 
   .entry.even {
@@ -24,8 +35,8 @@
   }
 
   .disabled h2::after {
-    background-color: $installed-badge-disabled-background-color;
-    color: $installed-badge-disabled-color;
+    background-color: $installed-badge-usercss-background-color !important;
+    color: $installed-badge-usercss-color !important;
   }
 
   .entry.usercss .style-name-link::after {
@@ -38,7 +49,8 @@
   .disabled h2::after,
   .disabled .actions,
   .disabled .applies-to {
-    opacity: 1;
+    opacity: 0.6;
+    font-weight: 400 !important;
   }
 
   .target {

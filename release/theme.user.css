@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name          Stylus Theme
 @description   A theme based on the Stylus logo
-@version       0.3.1
+@version       0.3.2
 @author        Randy W. Sims <simsrw73@gmail.com>
 @license       MIT
 @namespace     https://github.com/simsrw73
@@ -46,13 +46,12 @@
   details { margin-top: 1em; color: #26fefa !important; }
   label { color: white; }
   button { padding-top: 0.25em; padding-bottom: 0.25em; margin: 0.25em; -webkit-border-radius: 0.25em; border-radius: 0.25em; border: 1px solid rgba(38, 254, 250, 0.4); background-color: transparent; color: white; background-image: none; margin-bottom: 0.5em; cursor: pointer; -webkit-transition: all 200ms ease-in-out; transition: all 200ms ease-in-out; }
-  button:hover { background-color: rgba(38, 254, 250, 0.2) !important; border: 1px solid rgba(38, 254, 250, 0.4) !important; color: white !important; }
+  button:hover:not(:disabled) { background-color: rgba(38, 254, 250, 0.2) !important; border: 1px solid rgba(38, 254, 250, 0.4) !important; color: white !important; }
   select { color: white; border: 1px solid rgba(38, 254, 250, 0.4); background-color: transparent; -webkit-border-radius: 0.25em; border-radius: 0.25em; padding-right: 1.25em; font-weight: 300; letter-spacing: 0.025em; width: auto !important; height: 2em !important; padding: 3px 18px 3px 6px; margin-bottom: 0.5em; -webkit-transition: background-color 200ms ease-in-out; transition: background-color 200ms ease-in-out; }
-  select:hover { background-color: rgba(38, 254, 250, 0.2); }
-  select optgroup { background-color: rgba(145, 208, 198, 0.7); color: #00352d; }
-  select option { background-color: #91d0c6; color: #00352d; }
-  button:disabled, select:disabled, option:disabled, select[disabled] > option { color: #aaa; border-color: #ccc; background-color: transparent; }
-  button:disabled:hover, select:disabled:hover, option:disabled:hover, select[disabled] > option:hover { color: #aaa !important; border-color: #ccc !important; background-color: transparent !important; cursor: default; }
+  select:hover:not(:disabled) { background-color: rgba(38, 254, 250, 0.2); }
+  select optgroup { background-color: #2d7070; color: #fff; }
+  select option { background-color: #a8fefc; color: #333; }
+  button:disabled, select:disabled, option:disabled, select[disabled] > option { background-color: transparent; border: 1px solid rgba(38, 254, 250, 0.4); color: white; background-image: none; opacity: 0.5; cursor: default; }
   input { -webkit-border-radius: 0.25em; border-radius: 0.25em; background-color: rgba(38, 254, 250, 0.2) !important; border: 1px solid rgba(38, 254, 250, 0.4) !important; margin-bottom: 0.5em; }
   input:not([type='checkbox']) { padding-top: 0.25em !important; padding-bottom: 0.25em !important; height: 2em !important; }
   input[type='checkbox']:not(.slider) { border: 1px solid rgba(38, 254, 250, 0.4); }
@@ -68,11 +67,12 @@
   #installed { -webkit-box-shadow: 2px 0 8px rgba(0, 0, 0, 0.6); box-shadow: 2px 0 8px rgba(0, 0, 0, 0.6); padding-top: 2em; padding-bottom: 2em; background-color: #333; }
   #installed .entry { background-color: #333 !important; }
   #installed .entry h2 { padding-top: 1em; padding-bottom: 1em; text-shadow: none; }
+  #installed .entry .style-name:hover::before { background: -webkit-linear-gradient(left, #26fefa, #26fefa 4px, rgba(0, 0, 0, 0.15) 5px, rgba(0, 0, 0, 0.1) 60%, transparent); background: linear-gradient(to right, #26fefa, #26fefa 4px, rgba(0, 0, 0, 0.15) 5px, rgba(0, 0, 0, 0.1) 60%, transparent); }
   #installed .entry.even { background: none !important; background-image: -webkit-gradient(linear, left top, right top, from(rgba(38, 254, 250, 0.3)), color-stop(70%, rgba(0, 53, 45, 0.2)), color-stop(90%, rgba(0, 53, 45, 0.1)), to(transparent)) !important; background-image: -webkit-linear-gradient(left, rgba(38, 254, 250, 0.3), rgba(0, 53, 45, 0.2) 70%, rgba(0, 53, 45, 0.1) 90%, transparent 100%) !important; background-image: linear-gradient(to right, rgba(38, 254, 250, 0.3), rgba(0, 53, 45, 0.2) 70%, rgba(0, 53, 45, 0.1) 90%, transparent 100%) !important; }
   #installed .style-name-link { color: #26fefa; }
-  #installed .disabled h2::after { background-color: rgba(145, 208, 198, 0.3); color: #ccc; }
-  #installed .entry.usercss .style-name-link::after { background-color: rgba(145, 208, 198, 0.8); color: #00352d; font-weight: 700; }
-  #installed .disabled h2 .style-name-link, #installed .disabled h2::after, #installed .disabled .actions, #installed .disabled .applies-to { opacity: 1; }
+  #installed .disabled h2::after { background-color: rgba(38, 254, 250, 0.4) !important; color: #eee !important; }
+  #installed .entry.usercss .style-name-link::after { background-color: rgba(38, 254, 250, 0.4); color: #eee; font-weight: 700; }
+  #installed .disabled h2 .style-name-link, #installed .disabled h2::after, #installed .disabled .actions, #installed .disabled .applies-to { opacity: 0.6; font-weight: 400 !important; }
   #installed .target { color: #26fefa; font-weight: 400; }
   #installed .svg-icon.checked { fill: #26fefa !important; }
   #installed .actions .svg-icon { fill: #26fefa !important; }
@@ -151,6 +151,7 @@
   #stylus-manage #options > label > input { margin-top: 2px; }
   #stylus-manage #options #newUIoptions label > svg { margin-top: 4px; }
   #stylus-manage #options #newUIoptions label > input { margin-top: 2px; }
+  #stylus-manage #options #manage\.newUI\.targets { padding-left: 0.5em; width: 3.5em; }
   #stylus-manage #options-buttons { position: relative; margin-top: 1em; margin-bottom: 1em; border-top: solid 1px rgba(38, 254, 250, 0.4); height: 24px; padding-top: 0.5em; }
   #stylus-manage #manage-options-button, #stylus-manage #manage-shortcuts-button, #stylus-manage #find-editor-styles > button { text-overflow: clip; color: transparent; width: 0; height: 0; padding: 0; margin: 0; max-width: none; background-color: transparent; background: none; border: none; cursor: pointer; }
   #stylus-manage #manage-options-button:before, #stylus-manage #manage-shortcuts-button:before, #stylus-manage #find-editor-styles > button:before { color: white; position: absolute; width: 1em; height: 1em; }
@@ -220,6 +221,6 @@
   #help-popup button:hover { background-color: rgba(0, 0, 0, 0.1) !important; border-color: #333 !important; color: #000 !important; }
   #help-popup.big { background-color: #333; }
   #help-popup.big button { background-color: rgba(38, 254, 250, 0.2) !important; border-color: rgba(38, 254, 250, 0.8) !important; color: rgba(38, 254, 250, 0.8) !important; -webkit-transition: all 200ms ease-in-out; transition: all 200ms ease-in-out; }
-  #help-popup.big button:hover { background-color: rgba(38, 254, 250, 0.4) !important; color: rgba(38, 254, 250, 0.8) !important; }
+  #help-popup.big button:hover:not(:disabled) { background-color: rgba(38, 254, 250, 0.4) !important; color: rgba(38, 254, 250, 0.8) !important; }
   #help-popup.big svg#sections-help { fill: white; }
 }

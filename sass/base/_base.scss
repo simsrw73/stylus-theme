@@ -53,7 +53,7 @@ button {
   cursor: pointer;
   transition: all 200ms ease-in-out;
 
-  &:hover {
+  &:hover:not(:disabled) {
     background-color: $color-selection !important;
     border: 1px solid $color-control-color !important;
     color: white !important;
@@ -74,18 +74,18 @@ select {
   margin-bottom: 0.5em;
   transition: background-color 200ms ease-in-out;
 
-  &:hover {
+  &:hover:not(:disabled) {
     background-color: $color-selection;
   }
 
   optgroup {
-    background-color: rgba(145, 208, 198, 0.7);
-    color: #00352d;
+    background-color: #2d7070;
+    color: #fff;
   }
 
   option {
-    background-color: $color-secondary;
-    color: $color-primary;
+    background-color: #a8fefc; // $accent-color, 60% lightened - Pine Tools
+    color: #333;
   }
 }
 
@@ -93,16 +93,12 @@ button:disabled,
 select:disabled,
 option:disabled,
 select[disabled] > option {
-  color: #aaa;
-  border-color: #ccc;
   background-color: transparent;
-
-  &:hover {
-    color: #aaa !important;
-    border-color: #ccc !important;
-    background-color: transparent !important;
-    cursor: default;
-  }
+  border: 1px solid $color-control-color;
+  color: white;
+  background-image: none;
+  opacity: 0.5;
+  cursor: default;
 }
 
 input {
