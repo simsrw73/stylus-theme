@@ -9,6 +9,7 @@
   button,
   input,
   select {
+    margin-left: 0.25em;
     background-color: $color-ws-control-background !important;
     border-color: $color-ws-control-color !important;
     transition: all 200ms ease-in-out;
@@ -17,6 +18,13 @@
       background-color: $color-ws-selection !important;
       color: $color-ws-control-color !important;
     }
+  }
+
+  label.code-label {
+    display: inline-block;
+    margin-left: -16px;
+    margin-bottom: 0.25em;
+    font-size: 14px;
   }
 
   svg.svg-icon {

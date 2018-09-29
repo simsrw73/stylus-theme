@@ -90,6 +90,11 @@
     }
   }
 
+  #search-help,
+  #sorter-help {
+    margin-bottom: 6px;
+  }
+
   #filters {
     border: 1px solid transparent;
     order: 2;
@@ -178,6 +183,24 @@
     #manage\.newUI\.targets {
       padding-left: 0.25em;
       color: white;
+    }
+
+    & > label {
+      & > svg {
+        margin-top: 4px;
+      }
+      & > input {
+        margin-top: 2px;
+      }
+    }
+
+    #newUIoptions label {
+      & > svg {
+        margin-top: 4px;
+      }
+      & > input {
+        margin-top: 2px;
+      }
     }
   }
 

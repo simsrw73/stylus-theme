@@ -8,4 +8,13 @@
     color: white;
     padding-left: 0.5em;
   }
+
+  #options-wrapper .option > label {
+    & > svg {
+      margin-top: 4px;
+    }
+    & > input {
+      margin-top: 2px;
+    }
+  }
 }
