@@ -32,8 +32,12 @@ Or directly from here:
 
 ## Gallery
 
-![Popup](screenshots/editor.png)
+![Popup](screenshots/popup.png)
 
 ![Popup](screenshots/install.png)
 
-![Popup](screenshots/popup.png)
+![Popup](screenshots/editor.png)
+
+![Popup](screenshots/editor2.png)
+
+![Popup](screenshots/options.png)
