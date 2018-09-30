@@ -118,12 +118,12 @@ input[type='checkbox']:not(.slider) {
   border: 1px solid $color-control-color;
 }
 
-input[type='checkbox']:not(.slider):hover {
-  background-color: $color-primary;
+input[type='checkbox']:not(.slider) {
+  background-color: $color-control-background;
 
   &:active,
   &:hover {
-    background-color: $color-primary;
+    background-color: $color-selection;
   }
 }
 

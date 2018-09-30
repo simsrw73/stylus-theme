@@ -28,7 +28,16 @@
     position: relative;
 
     a {
-      color: $color-secondary;
+      color: $color-accent;
+    }
+
+    label {
+      & > input[type='checkbox'] {
+        margin-top: 2px;
+      }
+      .svg-icon.checked {
+        margin-top: 4px;
+      }
     }
 
     #disable-all-wrapper::after {
@@ -50,7 +59,7 @@
         content: 'Find more styles...';
         display: inline-block;
         position: absolute;
-        color: $color-secondary;
+        color: $color-accent;
         text-decoration: underline;
         top: 0;
         left: 0;
