@@ -89,6 +89,11 @@ select {
   }
 }
 
+input,
+select {
+  padding-left: 0.5em;
+}
+
 button:disabled,
 select:disabled,
 option:disabled,

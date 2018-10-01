@@ -268,10 +268,9 @@
       color: white;
     }
 
-    &::after {
-      content: '';
-      height: calc(120px + 6em);
-      display: block;
+    padding-bottom: calc(120px + 6em);
+    @media screen and (max-width: $break-m) {
+      padding-bottom: 1em;
     }
   }
 
@@ -287,6 +286,10 @@
     background-color: $header-background-color;
     text-align: center;
     box-shadow: 0 -2px 8px -2px rgba(0, 0, 0, 0.2);
+
+    @media screen and (max-width: $break-s) {
+      display: none;
+    }
 
     & > :not(:last-child):after {
       content: '\2022';
