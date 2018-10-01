@@ -173,11 +173,6 @@
   }
 
   #options {
-    #manage\.newUI\.targets {
-      padding-left: 0.25em;
-      color: white;
-    }
-
     & > label {
       & > svg {
         margin-top: 4px;
@@ -197,8 +192,8 @@
     }
 
     #manage\.newUI\.targets {
-      padding-left: 0.5em;
       width: 3.5em;
+      color: white;
     }
   }
 

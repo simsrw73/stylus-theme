@@ -91,7 +91,7 @@ select {
 
 input,
 select {
-  padding-left: 0.5em;
+  padding-left: 0.5em !important;
 }
 
 button:disabled,
@@ -119,16 +119,16 @@ input:not([type='checkbox']) {
   height: 2em !important;
 }
 
-input[type='checkbox']:not(.slider) {
-  border: 1px solid $color-control-color;
-}
+// input[type='checkbox']:not(.slider) {
+//   border: 1px solid $color-control-color;
+// }
 
-input[type='checkbox']:not(.slider) {
-  background-color: $color-control-background;
+input[type='checkbox']:not(.slider),
+input[type='number'] {
+  background-color: transparent !important;
 
-  &:active,
   &:hover {
-    background-color: $color-selection;
+    background-color: $color-selection !important;
   }
 }
 
