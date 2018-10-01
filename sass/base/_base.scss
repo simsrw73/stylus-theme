@@ -52,6 +52,7 @@ button {
   margin-bottom: 0.5em;
   cursor: pointer;
   transition: all 200ms ease-in-out;
+  height: 2em;
 
   &:hover:not(:disabled) {
     background-color: $color-selection !important;

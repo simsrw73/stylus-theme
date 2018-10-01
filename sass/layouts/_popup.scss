@@ -66,6 +66,10 @@
       }
     }
 
+    #write-style-for {
+      color: white !important; // For Firefox
+    }
+
     #popup-options {
       button {
         background-color: $color-ws-control-background !important;
