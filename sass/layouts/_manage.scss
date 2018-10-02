@@ -115,6 +115,20 @@
       }
     }
 
+    #only-updates {
+      input {
+        margin-top: 2px;
+      }
+
+      svg {
+        margin-top: 4px;
+      }
+
+      & > span {
+        margin-left: 2px;
+      }
+    }
+
     select:hover {
       background: transparent;
     }
@@ -211,7 +225,6 @@
   #find-editor-styles > button {
     &:before {
       color: white;
-      // position: absolute;
       width: 20px;
       height: 20px;
     }
@@ -266,13 +279,19 @@
   }
 
   #backup {
-    #backup-message {
-      color: white;
+    padding-bottom: calc(120px + 6em);
+
+    // hack: Target Firefox
+    @media screen and (min--moz-device-pixel-ratio: 0) {
+      padding-bottom: calc(120px + 7em);
     }
 
-    padding-bottom: calc(120px + 6em);
     @media screen and (max-width: $break-m) {
       padding-bottom: 1em;
+    }
+
+    #backup-message {
+      color: white;
     }
   }
 
@@ -288,6 +307,12 @@
     background-color: $header-background-color;
     text-align: center;
     box-shadow: 0 -2px 8px -2px rgba(0, 0, 0, 0.2);
+
+    // hack: Target Firefox
+    @media screen and (min--moz-device-pixel-ratio: 0) {
+      width: inherit;
+      padding: 0 16px 1em 16px !important;
+    }
 
     @media screen and (max-width: $break-s) {
       display: none;
