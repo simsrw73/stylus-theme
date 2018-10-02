@@ -32,7 +32,6 @@ a {
 }
 
 details {
-  margin-top: 1em;
   color: $color-accent !important;
 }
 
@@ -99,11 +98,11 @@ button:disabled,
 select:disabled,
 option:disabled,
 select[disabled] > option {
+  @extend %disabled;
   background-color: transparent;
   border: 1px solid $color-control-color;
   color: white;
   background-image: none;
-  opacity: 0.5;
   cursor: default;
 }
 
@@ -127,6 +126,10 @@ input:not([type='checkbox']) {
 input[type='checkbox']:not(.slider),
 input[type='number'] {
   background-color: transparent !important;
+
+  &:disabled {
+    @extend %disabled;
+  }
 
   &:hover {
     background-color: $color-selection !important;

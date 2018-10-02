@@ -7,6 +7,17 @@
   #header-content-wrapper {
     display: flex;
     flex-direction: column;
+
+    .set-update-url input:disabled {
+      & + .svg-icon.checked {
+        fill: rgba(255, 255, 255, 0.5) !important;
+      }
+
+      & + .svg-icon.checked + span {
+        @extend %disabled;
+        color: white;
+      }
+    }
   }
 
   h1 {
@@ -46,7 +57,7 @@
     order: -1;
     margin-top: -1em;
     margin-bottom: 2em;
-    color: #ddd;
+    color: #eee;
     font-style: italic;
   }
 

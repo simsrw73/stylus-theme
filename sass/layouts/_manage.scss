@@ -10,6 +10,11 @@
   #update-all {
     margin-left: 1rem;
     margin-bottom: 0;
+
+    #update-all-no-updates {
+      color: white;
+      @extend %disabled;
+    }
   }
 
   #check-all-updates,
@@ -131,18 +136,24 @@
 
     select:hover {
       background: transparent;
+
+      & + .svg-icon.select-arrow {
+        fill: white !important;
+      }
     }
 
-    #manage\.onlyEnabled\.invert {
-      width: 133px !important;
+    .select-resizer {
+      width: 100%;
+
+      & > .svg-icon.select-arrow {
+        fill: transparent !important;
+      }
     }
 
-    #manage\.onlyLocal\.invert {
-      width: 168px !important;
-    }
-
+    #manage\.onlyEnabled\.invert,
+    #manage\.onlyLocal\.invert,
     #manage\.onlyUsercss\.invert {
-      width: 156px !important;
+      width: 100% !important;
     }
 
     #search-wrapper {
