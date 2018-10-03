@@ -319,12 +319,6 @@
     text-align: center;
     box-shadow: 0 -2px 8px -2px rgba(0, 0, 0, 0.2);
 
-    // hack: Target Firefox
-    @media screen and (min--moz-device-pixel-ratio: 0) {
-      width: inherit;
-      padding: 0 16px 1em 16px !important;
-    }
-
     @media screen and (max-width: $break-s) {
       display: none;
     }
@@ -349,6 +343,35 @@
 
     a {
       color: $color-accent;
+    }
+
+    // hack: Target Firefox
+    @media screen and (min--moz-device-pixel-ratio: 0) {
+      display: flex;
+      box-sizing: border-box;
+      height: calc(120px + 4em);
+      width: calc(var(--header-width) - 32px);
+      padding: 2em 2em !important;
+      border-top-right-radius: 40px;
+      flex-flow: column wrap;
+      justify-content: flex-end;
+
+      &::before {
+        margin: 0 !important;
+      }
+
+      & > span {
+        display: inline-block;
+        margin-top: 0.5em;
+
+        &:last-child {
+          margin-bottom: 12px;
+        }
+
+        &::after {
+          content: '' !important;
+        }
+      }
     }
   }
 }
