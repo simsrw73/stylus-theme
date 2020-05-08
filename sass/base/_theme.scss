@@ -1,6 +1,6 @@
 // Select Theme [ "Light" / "Dark" ]
 
-$theme: 'Dark';
+$theme: "Dark";
 
 // Light
 
@@ -35,7 +35,7 @@ $installed-badge-usercss-color: white !default;
 $installed-badge-usercss-background-color: rgba($color-primary, 0.8) !default;
 
 // Dark Theme
-@if ($theme == 'Dark') {
+@if ($theme == "Dark") {
   $color-selection: transparentize($color-accent, 0.8);
   $color-control-background: transparentize($color-accent, 0.8);
   $color-control-color: transparentize($color-accent, 0.6);

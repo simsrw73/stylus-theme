@@ -29,7 +29,7 @@
     white-space: nowrap;
 
     &::after {
-      content: '';
+      content: "";
       position: absolute;
       height: 5px;
       width: 100%;
@@ -69,10 +69,10 @@
       margin-top: 0.75em;
 
       &:before {
-        content: 'Sort:';
+        content: "Sort:";
         display: block;
         width: 100%;
-        color: #26fefa;
+        color: $color-accent;
         font-size: 18px;
         font-weight: 700;
         font-variant: small-caps;
@@ -289,6 +289,26 @@
     margin: 0 0.5rem 0.5rem 0;
   }
 
+  #backup-buttons {
+    .dropbtn {
+      width: 100%;
+      background-color: transparent;
+      border: 1px solid rgba($color-accent, 0.4);
+    }
+
+    .dropdown:not(:first-child) {
+      margin-left: 0.5rem;
+    }
+
+    .dropdown-content {
+      background-color: $color-accent;
+
+      a:hover {
+        background-color: rgba(#333, 0.3) !important;
+      }
+    }
+  }
+
   #backup {
     padding-bottom: calc(120px + 6em);
 
@@ -319,19 +339,20 @@
     text-align: center;
     box-shadow: 0 -2px 8px -2px rgba(0, 0, 0, 0.2);
     z-index: 10;
+    pointer-events: none;
 
     @media screen and (max-width: $break-s) {
       display: none;
     }
 
     & > :not(:last-child):after {
-      content: '\2022';
+      content: "\2022";
       margin: 0 0 0 0.5em;
       font-size: 0.8em;
     }
 
     &::before {
-      content: '';
+      content: "";
       display: block;
       width: 120px;
       height: 120px;
@@ -344,6 +365,7 @@
 
     a {
       color: $color-accent;
+      pointer-events: all;
     }
 
     // hack: Target Firefox
@@ -356,6 +378,7 @@
       border-top-right-radius: 40px;
       flex-flow: column wrap;
       justify-content: flex-end;
+      pointer-events: all;
 
       &::before {
         margin: 0 !important;
@@ -370,7 +393,7 @@
         }
 
         &::after {
-          content: '' !important;
+          content: "" !important;
         }
       }
     }

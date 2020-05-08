@@ -1,23 +1,23 @@
-@import './base/variables';
-@import './base/mixins';
-@import './base/functions';
-@import './base/colors';
-@import './base/typography';
+@import "./base/variables";
+@import "./base/mixins";
+@import "./base/functions";
+@import "./base/colors";
+@import "./base/typography";
 
-@import './base/theme';
+@import "./base/theme";
 
-@import './base/base';
+@import "./base/base";
 
-@import './components/scrollbar';
-@import './components/installed';
-@import './components/editor-sections';
-@import './components/editor';
-@import './components/msgs';
+@import "./components/scrollbar";
+@import "./components/installed";
+@import "./components/editor-sections";
+@import "./components/editor";
+@import "./components/msgs";
 
-@import './layouts/header';
-@import './layouts/install';
-@import './layouts/manage';
-@import './layouts/edit';
-@import './layouts/options';
-@import './layouts/popup';
-@import './layouts/message-box';
+@import "./layouts/header";
+@import "./layouts/install";
+@import "./layouts/manage";
+@import "./layouts/edit";
+@import "./layouts/options";
+@import "./layouts/popup";
+@import "./layouts/message-box";

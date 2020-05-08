@@ -9,11 +9,11 @@
     letter-spacing: 0.05em;
 
     &::before {
-      content: '{';
+      content: "{";
       font-size: 1.2em;
     }
     &::after {
-      content: '}';
+      content: "}";
       font-size: 1.2em;
     }
   }

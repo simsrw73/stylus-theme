@@ -1,7 +1,7 @@
 #stylus-install-usercss {
   #header h1::before,
   #header h1::after {
-    content: '' !important;
+    content: "" !important;
   }
 
   #header-content-wrapper {
@@ -33,11 +33,11 @@
 
   .meta-name {
     &::before {
-      content: '{';
+      content: "{";
       font-size: 1.2em;
     }
     &::after {
-      content: '}';
+      content: "}";
       font-size: 1.2em;
     }
   }
@@ -48,7 +48,7 @@
     bottom: -1.5em;
 
     &::before {
-      content: ' \Av';
+      content: " \Av";
       white-space: pre;
     }
   }
